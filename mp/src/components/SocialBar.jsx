@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Github from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
+import FollowMe from "../assets/followme.svg";
 
 const MotionSocial = styled(motion.div)`
   margin-top: 2rem;
@@ -49,9 +50,9 @@ const LineUp = styled.div`
 `;
 
 const IconContainer = styled.div`
-  height: 14%;
+  height: 16%;
   width: 200px;
-  margin: 1rem;
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -61,10 +62,50 @@ const Icons = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
+`;
+
+const LinkS = styled.a`
+  z-index: 10;
+  &:hover {
+    animation: diagonal-to-top-right 0.5s forwards
+      cubic-bezier(0.5, 0, 0.25, 2.33);
+
+    @keyframes diagonal-to-top-right {
+      to {
+        transform: translateX(12px) translateY(-3px);
+      }
+    }
+  }
 
   img {
     width: 28px;
     height: 28px;
+  }
+`;
+
+const Follow = styled.div`
+  display: none;
+
+  img {
+    width: 216px;
+    height: 70px;
+    margin-right: 2rem;
+  }
+
+  ${LinkS}:hover + & {
+    display: block;
+    position: absolute;
+    top: 66%;
+    right: 9.5%;
+    
+  }
+
+  ${LinkS}:nth-of-type(2):hover ~ & {
+    display: block;
+    position: absolute;
+    top: 72%;
+    right: 9.5%;
+    
   }
 `;
 
@@ -79,6 +120,7 @@ const ContainerDown = styled.div`
 const LineDown = styled.div`
   height: 10%;
   position: fixed;
+
 
   ::before {
     content: "";
@@ -114,8 +156,23 @@ const SocialBar = () => {
 
           <IconContainer>
             <Icons>
-              <img src={Linkedin} alt="Linked In de Cau" />
-              <img src={Github} alt="Github de Cau" />
+
+              <LinkS
+                href="https://www.linkedin.com/in/cau-ugolini-923a4a185/"
+                target="blank"
+              >
+                <img src={Linkedin} alt="Linked In de Cau" />
+              </LinkS>
+              <Follow>
+                <img src={FollowMe} alt="Me siga nas redes sociais:" />
+              </Follow>
+
+              <LinkS href="https://github.com/caumaria" target="blank">
+                <img src={Github} alt="Github de Cau" />
+              </LinkS>
+              <Follow>
+                <img src={FollowMe} alt="Me siga nas redes sociais:" />
+              </Follow>
             </Icons>
           </IconContainer>
 

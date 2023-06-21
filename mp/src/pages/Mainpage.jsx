@@ -21,11 +21,9 @@ const Mainpage = () => {
     <MainConteiner>
 
       <Header />
-
       <Conteiner>
 
       </Conteiner>
-
       <SocialBar />
 
     </MainConteiner>
