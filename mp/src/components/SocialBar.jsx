@@ -13,6 +13,7 @@ const SlideInRight = styled(motion.div)``;
 const SocialContainer = styled.div`
   height: 100vh;
   width: 200px;
+  position: relative;
 `;
 
 const ContainerUp = styled.div`
@@ -27,7 +28,7 @@ const ContainerUp = styled.div`
 
 const LineUp = styled.div`
   height: 60%;
-  position: fixed;
+  position: absolute;
 
   ::before {
     content: "";
@@ -119,7 +120,7 @@ const ContainerDown = styled.div`
 
 const LineDown = styled.div`
   height: 10%;
-  position: fixed;
+  position: absolute;
 
 
   ::before {

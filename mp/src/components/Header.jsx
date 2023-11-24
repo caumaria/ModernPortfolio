@@ -10,10 +10,11 @@ const SlideInLeft = styled(motion.div)``;
 const HeaderContainer = styled.div`
   height: 100vh;
   width: 200px;
+  position: relative;
 `;
 
 const LineTop = styled.div`
-  position: fixed;
+  position: absolute;
   height: 28%;
 
   ::before {
@@ -37,6 +38,7 @@ const LineTop = styled.div`
 `;
 
 const Ul = styled.div`
+  position: absolute;
   li {
     padding-bottom: 1.6rem;
     list-style: none;
@@ -45,7 +47,7 @@ const Ul = styled.div`
 
 const LineBottom = styled.div`
   height: 28%;
-  position: fixed;
+  position: absolute;
 
   ::before {
     content: "";
