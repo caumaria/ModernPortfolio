@@ -1,36 +1,33 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Github from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
 import FollowMe from "../assets/followme.svg";
 
-const MotionSocial = styled(motion.div)`
-  margin-top: 2rem;
-`;
+const MotionSocial = styled(motion.div)``;
 const SlideInRight = styled(motion.div)``;
 
 const SocialContainer = styled.div`
   height: 100vh;
   width: 200px;
-  position: relative;
 `;
 
 const ContainerUp = styled.div`
-  margin-top: 1rem;
-  height: 60%;
+  position: relative;
+  height: 58%;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: end;
-  overflow: hidden;
+  margin-top: 3rem;
 `;
 
 const LineUp = styled.div`
-  height: 60%;
+  height: 100%;
   position: absolute;
 
-  ::before {
+  ::after {
     content: "";
     width: 1px;
     height: 0;
@@ -51,7 +48,7 @@ const LineUp = styled.div`
 `;
 
 const IconContainer = styled.div`
-  height: 16%;
+  height: 150px;
   width: 200px;
   margin: 0 1rem;
   display: flex;
@@ -65,17 +62,18 @@ const Icons = styled.div`
   gap: 1.2rem;
 `;
 
+const rotateAndMove = keyframes`
+  to {
+    transform: translateX(20px) translateY(-8px) rotate(-10deg);
+  }
+`;
+
 const LinkS = styled.a`
   z-index: 10;
-  &:hover {
-    animation: diagonal-to-top-right 0.5s forwards
-      cubic-bezier(0.5, 0, 0.25, 2.33);
+  position: relative;
 
-    @keyframes diagonal-to-top-right {
-      to {
-        transform: translateX(12px) translateY(-3px);
-      }
-    }
+  &:hover img {
+    animation: ${rotateAndMove} 0.2s forwards cubic-bezier(0.5, 0, 0.25, 2.33);
   }
 
   img {
@@ -96,22 +94,18 @@ const Follow = styled.div`
   ${LinkS}:hover + & {
     display: block;
     position: absolute;
-    top: 66%;
-    right: 9.5%;
-    
+    right: 1%;
   }
 
   ${LinkS}:nth-of-type(2):hover ~ & {
     display: block;
     position: absolute;
-    top: 72%;
-    right: 9.5%;
-    
+    right: 1%;
   }
 `;
 
 const ContainerDown = styled.div`
-  height: 10%;
+  height: 20%;
   width: 200px;
   display: flex;
   align-items: center;
@@ -119,9 +113,8 @@ const ContainerDown = styled.div`
 `;
 
 const LineDown = styled.div`
-  height: 10%;
+  height: 20%;
   position: absolute;
-
 
   ::before {
     content: "";
@@ -157,19 +150,18 @@ const SocialBar = () => {
 
           <IconContainer>
             <Icons>
+              <LinkS href="https://github.com/caumaria" target="blank">
+                <img src={Github} alt="Github de Cau" />
+              </LinkS>
+              <Follow>
+                <img src={FollowMe} alt="Me siga nas redes sociais:" />
+              </Follow>
 
               <LinkS
                 href="https://www.linkedin.com/in/cau-ugolini-923a4a185/"
                 target="blank"
               >
                 <img src={Linkedin} alt="Linked In de Cau" />
-              </LinkS>
-              <Follow>
-                <img src={FollowMe} alt="Me siga nas redes sociais:" />
-              </Follow>
-
-              <LinkS href="https://github.com/caumaria" target="blank">
-                <img src={Github} alt="Github de Cau" />
               </LinkS>
               <Follow>
                 <img src={FollowMe} alt="Me siga nas redes sociais:" />
