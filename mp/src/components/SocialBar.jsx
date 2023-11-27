@@ -147,7 +147,7 @@ const SocialBar = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <SlideInRight variants={fadeIn("left", "tween", 1.4, 1)}>
+      <SlideInRight variants={fadeIn("left", "tween", 2, 1)}>
         <SocialContainer>
           <ContainerUp>
             <LineUp>

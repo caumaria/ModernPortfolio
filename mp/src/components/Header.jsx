@@ -86,7 +86,7 @@ const Header = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <SlideInLeft variants={fadeIn("right", "tween", 1.4, 1)}>
+      <SlideInLeft variants={fadeIn("right", "tween", 2, 1)}>
         <HeaderContainer>
           
           <Container>
