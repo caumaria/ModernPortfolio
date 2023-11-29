@@ -34,6 +34,8 @@ const WorkContainer = styled(motion.section)`
   width: 100%;
 `;
 
+const AnimatedSection = styled.section``;
+
 const AppCard = styled(motion.div)`
   display: flex;
   align-items: center;
@@ -43,30 +45,9 @@ const AppCard = styled(motion.div)`
   width: 100%;
   min-height: 520px;
   position: relative;
-
-  div {
-    width: 220px;
-    height: 220px;
-
-    cursor: pointer;
-
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 50%;
-      transition: transform 0.5s ease;
-
-      &:hover {
-        transform: translate(5px, 5px);
-      }
-    }
-  }
-
   h2 {
-    margin: 2rem 0 0.5rem;
+    margin: 3rem 0 0.5rem;
   }
-
   p {
     padding: 0 2rem;
     text-align: center;
@@ -74,20 +55,57 @@ const AppCard = styled(motion.div)`
   }
 `;
 
+const ImageContainer = styled.div`
+  width: 220px;
+  height: 220px;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease, rotate 0.3s ease 0.3s;
+
+    ${AnimatedSection}:hover & {
+      transform: translate(20px, 5px) rotate(15deg);
+    }
+  }
+`;
+
 const WorkPinkLine = styled.div`
-  max-width: 180px;
-  max-height: 180px;
+  min-width: 174px;
+  min-height: 174px;
   background-color: none;
   border: 2px solid var(--pink);
   box-shadow: 0px 0px 15px 1px rgba(255, 51, 109, 0.8);
   position: absolute;
-  top: 18%;
+  top: 17%;
+  left: 24%;
   z-index: -1;
-  transition: transform 0.3s ease 0s, rotate 0.3s ease 0.5s;
+  transition: transform 0.3s ease;
 
-  ${AppCard}:hover & {
-    transform: translate(-22px, -22px) rotate(0);
-    rotate: -45deg;
+  ${AnimatedSection}:hover & {
+    transform: translate(-34px, -20px) rotate(-20deg);
+  }
+`;
+
+const WorkBlueLine = styled.div`
+  min-width: 174px;
+  min-height: 174px;
+  background-color: none;
+  border: 2px solid var(--light-green);
+  box-shadow: 0px 0px 15px 1px rgba(102, 255, 237, 0.8);
+  position: absolute;
+  top: 19%;
+  left: 24%;
+  z-index: -1;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+
+  ${AnimatedSection}:hover & {
+    transform: translate(-34px, -10px) rotate(-36deg);
+    opacity: 1;
   }
 `;
 
@@ -108,13 +126,16 @@ export default function Work() {
         {projects.map((exp, i) => {
           return (
             <AppCard variants={fadeIn("up", "tween", (i + 1) * 0.6, 1)} key={i}>
-              <WorkPinkLine />
-              <div>
-                <img
-                  src={exp.img}
-                  alt="Image and Link to cau&rsquo;s project"
-                />
-              </div>
+              <AnimatedSection>
+                <WorkPinkLine />
+                <WorkBlueLine />
+                <ImageContainer>
+                  <img
+                    src={exp.img}
+                    alt="Image and Link to cau&rsquo;s project"
+                  />
+                </ImageContainer>
+              </AnimatedSection>
 
               <h2>{exp.name}</h2>
               <p>

@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     name: "sneakers",
-    about: "Landing page for products, from FrontendMentor challenge",
+    about: "Landing page for products, from FrontendMentor challenge(intermidiate)",
     year: "2022",
     url: "https://github.com/caumaria/productLandingPage",
     web: "https://productlandingpage-cau.vercel.app",
@@ -25,7 +25,7 @@ export const projects = [
   },
   {
     name: "Diary App",
-    about: "CRUD app • TodoList & Pomodoro Timer, designed to enhance productivity and streamline daily tasks. ",
+    about: "CRUD app • TodoList & Pomodoro Timer, enhance productivity and streamline tasks. ",
     year: "2023",
     url: "https://github.com/caumaria/diary",
     web: "https://diary-cau.vercel.app",
@@ -33,7 +33,7 @@ export const projects = [
   },
   {
     name: "Portfolio Card Style",
-    about: "First Portfolio",
+    about: "Portfolio Card in dark mode, the style designed by the developer Keita Yamada. ",
     year: "2022",
     url: "https://github.com/caumaria/diary",
     web: "https://diary-cau.vercel.app",
