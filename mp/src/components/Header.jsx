@@ -73,6 +73,7 @@ const ContainerUl = styled.div`
 const Ul = styled.div`
   position: absolute;
   li {
+    cursor: pointer;
     padding-bottom: 1.6rem;
     list-style: none;
     transition: transform 0.3s ease; 

@@ -11,9 +11,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  --grey: #070d0cd2;
   --dark-green: #14332F;
   --light-green: #66FFED;
   --pink: #FF336D;
+  --lettering: #8A9997;
 }
 
 body {

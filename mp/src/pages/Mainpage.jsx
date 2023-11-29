@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import FirstSection from "../components/FirstSection";
-import Hero from "../components/Hero";
+import Work from "../components/work/Work";
 
 
 const MainConteiner = styled.div`
@@ -17,7 +17,7 @@ const Mainpage = () => {
      
         <FirstSection />
    
-        <Hero />
+        <Work />
       
 
     </MainConteiner>
