@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const HeroContainer = styled.div`
   padding: 0 10rem;
-  height: 100vh;
+  height: auto;
   color: var(--pink);
   max-width: 1400px;
   margin: 0 auto;
