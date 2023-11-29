@@ -35,7 +35,7 @@ const SlideUp = styled(motion.div)`
     font-family: "Outfit";
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
     border: none;
     overflow: hidden;
     z-index: 2;
@@ -64,7 +64,7 @@ const PinkLine = styled.div`
   height: 95%;
   border: none;
   transform-origin: bottom right;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
 
   ${SlideUp}:hover & {

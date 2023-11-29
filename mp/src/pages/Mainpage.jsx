@@ -1,24 +1,18 @@
 import styled from "styled-components";
 import FirstSection from "../components/FirstSection";
 import Work from "../components/work/Work";
+import Hero from "../components/hero/Hero";
 
 
 const MainConteiner = styled.div`
-  max-width: 1600px;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 0 4rem;
 `;
-
 
 const Mainpage = () => {
   return (
-    <MainConteiner>
-     
+    <MainConteiner>     
         <FirstSection />
-   
-        <Work />
-      
+        <Hero />
+        <Work />    
 
     </MainConteiner>
   );

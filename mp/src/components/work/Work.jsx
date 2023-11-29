@@ -4,9 +4,11 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 
 const HeroContainer = styled.div`
-  margin: 0 10rem;
+  padding: 0 10rem;
   height: 100vh;
   color: var(--pink);
+  max-width: 1400px;
+  margin: 0 auto;
 
   @media (max-width: 768px) {
     margin: 0;
@@ -19,7 +21,8 @@ const HeroContainer = styled.div`
     flex-direction: column;
   }
   h1 {
-    margin: 0;
+    margin: 4rem 0 0;
+    font-size: 3rem;
   }
 
   p {
@@ -65,7 +68,7 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    transition: transform 0.3s ease, rotate 0.3s ease 0.3s;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), rotate 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s;
 
     ${AnimatedSection}:hover & {
       transform: translate(20px, 5px) rotate(15deg);
@@ -83,7 +86,7 @@ const WorkPinkLine = styled.div`
   top: 17%;
   left: 24%;
   z-index: -1;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   ${AnimatedSection}:hover & {
     transform: translate(-34px, -20px) rotate(-20deg);
@@ -100,7 +103,7 @@ const WorkBlueLine = styled.div`
   top: 19%;
   left: 24%;
   z-index: -1;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
   opacity: 0;
 
   ${AnimatedSection}:hover & {
@@ -125,15 +128,17 @@ export default function Work() {
       >
         {projects.map((exp, i) => {
           return (
-            <AppCard variants={fadeIn("up", "tween", (i + 1) * 0.6, 1)} key={i}>
+            <AppCard variants={fadeIn("up", "tween", (i + 1) * 0.3, 1)} key={i}>
               <AnimatedSection>
                 <WorkPinkLine />
                 <WorkBlueLine />
                 <ImageContainer>
-                  <img
-                    src={exp.img}
-                    alt="Image and Link to cau&rsquo;s project"
-                  />
+                  <a href={exp.web} target="blank">
+                    <img
+                      src={exp.img}
+                      alt="Image and Link to cau&rsquo;s project"
+                    />
+                  </a>
                 </ImageContainer>
               </AnimatedSection>
 
