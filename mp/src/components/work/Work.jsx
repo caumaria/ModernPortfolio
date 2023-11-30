@@ -12,6 +12,7 @@ const HeroContainer = styled.div`
 
   @media (max-width: 768px) {
     margin: 0;
+    padding: 0;
   }
 
   div:nth-child(1) {
@@ -117,7 +118,7 @@ export default function Work() {
     <HeroContainer>
       <div>
         <h1>Cau&rsquo;s Portfolio</h1>
-        <p>My latest Works</p>
+        <p>My latest Work</p>
       </div>
 
       <WorkContainer

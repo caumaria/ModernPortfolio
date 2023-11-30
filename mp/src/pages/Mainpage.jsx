@@ -15,7 +15,6 @@ const Mainpage = () => {
         <Hero />
         <Work />    
         <Footer />
-
     </MainConteiner>
   );
 };

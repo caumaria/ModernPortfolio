@@ -5,7 +5,11 @@ import Github from "../assets/github.svg";
 import Linkedin from "../assets/linkedin.svg";
 import FollowMe from "../assets/followme.svg";
 
-const MotionSocial = styled(motion.div)``;
+const MotionSocial = styled(motion.div)`
+    @media (max-width: 1000px) {
+    display: none;
+  }
+`;
 const SlideInRight = styled(motion.div)``;
 
 const SocialContainer = styled.div`
@@ -105,7 +109,7 @@ const Follow = styled.div`
 `;
 
 const ContainerDown = styled.div`
-  height: 20%;
+  height: 12%;
   width: 200px;
   display: flex;
   align-items: center;
@@ -113,7 +117,7 @@ const ContainerDown = styled.div`
 `;
 
 const LineDown = styled.div`
-  height: 20%;
+  height: 13%;
   position: absolute;
 
   ::before {

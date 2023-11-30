@@ -4,6 +4,10 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 
 const MotionConteiner = styled(motion.div)`
   margin: 2rem 0;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 const SlideInLeft = styled(motion.div)``;
 
