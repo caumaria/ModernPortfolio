@@ -3,18 +3,23 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
 const MotionConteiner = styled(motion.div)`
-  margin-top: 2rem;
+  margin: 2rem 0;
+
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 const SlideInLeft = styled(motion.div)``;
 
 const HeaderContainer = styled.div`
   height: 100vh;
   width: 200px;
+  position: relative;
 `;
 
 const LineTop = styled.div`
-  position: fixed;
-  height: 28%;
+  position: absolute;
+  height: 30%;
 
   ::before {
     content: "";
@@ -36,16 +41,9 @@ const LineTop = styled.div`
   }
 `;
 
-const Ul = styled.div`
-  li {
-    padding-bottom: 1.6rem;
-    list-style: none;
-  }
-`;
-
 const LineBottom = styled.div`
-  height: 28%;
-  position: fixed;
+  height: 30%;
+  position: absolute;
 
   ::before {
     content: "";
@@ -64,16 +62,39 @@ const LineBottom = styled.div`
 `;
 
 const Container = styled.div`
-  height: 33%;
+  height: 36%;
   width: 200px;
 `;
 
 const ContainerUl = styled.div`
-  height: 28%;
+  height: 30%;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: start;
+`;
+
+const Ul = styled.div`
+  position: absolute;
+  li {
+    cursor: pointer;
+    padding-bottom: 1.6rem;
+    list-style: none;
+    transition: transform 0.3s ease; 
+    &:hover {
+      transform: translateX(10px);
+      color: var(--light-green);
+      &::after {
+        content: attr(data-content);
+        color: var(--pink);
+        position: absolute;
+        top: 5%;
+        left: 8%;
+        white-space: nowrap;
+        z-index: -1;
+      }
+    }
+  }
 `;
 
 const Header = () => {
@@ -84,9 +105,8 @@ const Header = () => {
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
     >
-      <SlideInLeft variants={fadeIn("right", "tween", 1.4, 1)}>
+      <SlideInLeft variants={fadeIn("right", "tween", 2, 1)}>
         <HeaderContainer>
-          
           <Container>
             <LineTop>
               <div></div>
@@ -95,10 +115,10 @@ const Header = () => {
 
           <ContainerUl>
             <Ul>
-              <li>Home</li>
-              <li>About Me</li>
-              <li>Work</li>
-              <li>Contact</li>
+              <li data-content="Home">Home</li>
+              <li data-content="About Me">About Me</li>
+              <li data-content="Work">Work</li>
+              <li data-content="Contact">Contact</li>
             </Ul>
           </ContainerUl>
 
