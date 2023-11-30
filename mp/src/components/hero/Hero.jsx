@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import AboutMe from "./AboutMe";
+import Skills from "./Skills";
 
 const HeroContainer = styled.div`
   background-color: var(--dark-green);
@@ -28,44 +30,14 @@ const AboutMeContainer = styled.div`
   }
 `;
 
-const AboutMeContent = styled.div`
-  max-width: 360px;
-  width: 100%;
-  height: auto;
-  border: 2px solid var(--pink);
-  box-shadow: 0px 0px 15px 1px rgba(255, 51, 109, 0.8);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  padding: 2rem;
-
-  h4 {
-    color: var(--pink);
-  }
-`;
-
-const SkillsContent = styled.div``;
 
 export default function Hero() {
   return (
     <HeroContainer>
       <h2>About Me</h2>
       <AboutMeContainer>
-        <AboutMeContent>
-          <h4>Who am I</h4>
-          Originally embarked on a path of legal studies, dedicating years to 
-          mastering the intricacies of the law. However, a strong passion for 
-          technology and a desire for a new challenge led me to make a bold career 
-          transition.
-          <br></br>
-          The three strongest driving forces within me are curiosity, delight, and 
-          the aspiration to achieve something remarkable. My goal is to create 
-          exceptional web experiences.
-          <br></br>
-          free time gaming bla bla bla
-          </AboutMeContent>
-              
-        <SkillsContent>skills substituíveis por IA ou quase</SkillsContent>
+        <AboutMe />
+        <Skills />
       </AboutMeContainer>
     </HeroContainer>
   );
