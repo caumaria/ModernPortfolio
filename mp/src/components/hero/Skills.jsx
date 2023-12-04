@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import VisuallyHidden from "../VisuallyHidden";
 
 const SkillsContent = styled.div`
   max-width: 360px;
@@ -15,11 +16,17 @@ const SkillsContent = styled.div`
 export default function Skills() {
   return (
     <SkillsContent>
+      <VisuallyHidden>
+        <p></p>
+      </VisuallyHidden>
       <h4>Techs</h4>
       <p>
-        map img 
-        div div linha rosa div quadrado gira div img 
+        map img div div linha rosa div quadrado gira div img
+        <div>square
+          <img src="" alt="rounded" />
+          <div>position</div>
+        </div>
       </p>
     </SkillsContent>
-  )
+  );
 }

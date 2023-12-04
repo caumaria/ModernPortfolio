@@ -15,7 +15,7 @@ const AboutMeContent = styled.div`
   h4 {
     color: var(--pink);
     font-size: 1.5rem;
-    margin: 0 0 1rem;
+    margin: 1rem 0 0;
   }
 `;
 
@@ -60,18 +60,20 @@ export default function AboutMe() {
       <TinySquareTop />
       <TinySquareBottom />
       <h4>Who am I</h4>
-      Self-taught Front-end Developer.
-      <br></br>
-      <br></br>
-      add facul lugar<br></br>
-      <br></br>
-      <br></br>
-      The three strongest driving forces within me are curiosity, delight, and
-      the aspiration to achieve something remarkable. My goal is to create
-      exceptional web experiences.
-      <br></br>
-      <br></br>
-      free time gaming bla bla bla
+      <p>
+        Brazilian Self-taught Front-end Developer.
+        <br></br>
+        Fueled by curiosity, delight, and a strong aspiration to achieve excellence, 
+        I&rsquo;ve initiated my academic pursuit as a Software Engineer with the intent to 
+        broaden my knowledge and delve deeper into my passions.
+        <br></br>
+        <br></br>
+        I&rsquo;m searching for a junior level position as a developer, where I
+        can utilize my enthusiasm and skills to create outstanding digital experiences.
+        <br></br>
+        <br></br>
+        I find joy in playing games ♥ 
+      </p>
     </AboutMeContent>
   );
 }
