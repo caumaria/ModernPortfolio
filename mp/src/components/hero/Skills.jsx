@@ -17,12 +17,18 @@ export default function Skills() {
   return (
     <SkillsContent>
       <VisuallyHidden>
-        <p></p>
+        <p>
+          Primary Skills: ReactJS, Javascript, Typescript, NextJs, NodeJs, styled
+          components, sass, handcrafted css, HTML, Git, Github, AWS discovery day
+        </p>
+        <p>Learning the basics: Testing with Jest, Python</p>
+        <p>Next step: SQL, database and networking fundamentals </p>
       </VisuallyHidden>
       <h4>Techs</h4>
       <p>
         map img div div linha rosa div quadrado gira div img
-        <div>square
+        <div>
+          square
           <img src="" alt="rounded" />
           <div>position</div>
         </div>
