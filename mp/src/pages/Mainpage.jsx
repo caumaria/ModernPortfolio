@@ -4,16 +4,16 @@ import Work from "../components/work/Work";
 import Hero from "../components/hero/Hero";
 import Footer from "../components/footer/Footer";
 
-
 const MainConteiner = styled.div`
 `;
 
 const Mainpage = () => {
+
   return (
     <MainConteiner>     
-        <FirstSection />
+        <FirstSection />          
         <Hero />
-        <Work />    
+        <Work />
         <Footer />
     </MainConteiner>
   );

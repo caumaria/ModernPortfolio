@@ -23,11 +23,11 @@ const Conteiner = styled.div`
   justify-content: center;
 `;
 
-export default function FirstSection() {
+export default function FirstSection( ) {
   return (
     <PaddingContainer>
       <FirstSectionContainer>
-        <Header />
+        <Header/>
         <Conteiner>
           <MainSection />
         </Conteiner>
@@ -36,3 +36,4 @@ export default function FirstSection() {
     </PaddingContainer>
   );
 }
+

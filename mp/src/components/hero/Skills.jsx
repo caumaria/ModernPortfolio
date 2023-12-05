@@ -27,12 +27,12 @@ export default function Skills() {
       <h4>Techs</h4>
       <p>
         map img div div linha rosa div quadrado gira div img
+      </p>
         <div>
           square
           <img src="" alt="rounded" />
           <div>position</div>
         </div>
-      </p>
     </SkillsContent>
   );
 }

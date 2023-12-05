@@ -3,7 +3,7 @@ import { projects } from "../../data/data";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 
-const HeroContainer = styled.div`
+const PortfolioContainer = styled.div`
   padding: 0 10rem;
   height: auto;
   color: var(--pink);
@@ -115,7 +115,7 @@ const WorkBlueLine = styled.div`
 
 export default function Work() {
   return (
-    <HeroContainer>
+    <PortfolioContainer id="work">
       <div>
         <h1>Cau&rsquo;s Portfolio</h1>
         <p>My latest Work</p>
@@ -151,6 +151,6 @@ export default function Work() {
           );
         })}
       </WorkContainer>
-    </HeroContainer>
+    </PortfolioContainer>
   );
 }

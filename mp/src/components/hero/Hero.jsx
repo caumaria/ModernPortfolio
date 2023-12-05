@@ -33,7 +33,7 @@ const AboutMeContainer = styled.div`
 
 export default function Hero() {
   return (
-    <HeroContainer>
+    <HeroContainer id="hero">
       <h2>About Me</h2>
       <AboutMeContainer>
         <AboutMe />

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
+import Navbar from "./Navbar";
 
 const MotionConteiner = styled(motion.div)`
   margin: 2rem 0;
@@ -66,38 +67,9 @@ const Container = styled.div`
   width: 200px;
 `;
 
-const ContainerUl = styled.div`
-  height: 30%;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-`;
-
-const Ul = styled.div`
-  position: absolute;
-  li {
-    cursor: pointer;
-    padding-bottom: 1.6rem;
-    list-style: none;
-    transition: transform 0.3s ease; 
-    &:hover {
-      transform: translateX(10px);
-      color: var(--light-green);
-      &::after {
-        content: attr(data-content);
-        color: var(--pink);
-        position: absolute;
-        top: 5%;
-        left: 8%;
-        white-space: nowrap;
-        z-index: -1;
-      }
-    }
-  }
-`;
 
 const Header = () => {
+
   return (
     <MotionConteiner
       variants={staggerContainer}
@@ -113,14 +85,7 @@ const Header = () => {
             </LineTop>
           </Container>
 
-          <ContainerUl>
-            <Ul>
-              <li data-content="Home">Home</li>
-              <li data-content="About Me">About Me</li>
-              <li data-content="Work">Work</li>
-              <li data-content="Contact">Contact</li>
-            </Ul>
-          </ContainerUl>
+          <Navbar />
 
           <Container>
             <LineBottom>
@@ -132,5 +97,6 @@ const Header = () => {
     </MotionConteiner>
   );
 };
+
 
 export default Header;

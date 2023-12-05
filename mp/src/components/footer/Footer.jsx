@@ -9,7 +9,7 @@ const FooterContainer = styled.div`
 
 export default function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id="contact">
       <h3>What&rsquo;s next?</h3>
       <h2>
         Get in

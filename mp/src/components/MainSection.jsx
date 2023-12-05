@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Me from "../assets/me.png";
-import VisuallyHidden from "./visuallyHidden";
+import VisuallyHidden from "./VisuallyHidden";
 import Arrow from "../assets/arrow.svg";
 
 const MainConteiner = styled(motion.div)`
