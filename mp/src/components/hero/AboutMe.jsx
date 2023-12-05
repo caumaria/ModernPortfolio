@@ -13,9 +13,33 @@ const AboutMeContent = styled.div`
   padding: 2rem;
 
   h4 {
+    position: relative;
     color: var(--pink);
     font-size: 1.5rem;
     margin: 1rem 0 0;
+    transition: transform .8s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background-color: var(--light-green);
+      top: 50%;
+      transform: translateX(-100%);
+      transition: transform .8s cubic-bezier(0.34, 1.56, 0.64, 1), opacity .8s cubic-bezier(0.34, 1.56, 0.64, 1), width .8s cubic-bezier(0.34, 1.56, 0.64, 1);
+      opacity: 0;
+    }
+  }
+
+  &:hover {
+    h4 { 
+      transform: translateX(80px);
+      &::before {
+        width: 80px;
+        opacity: 1;
+      }
+    }
   }
 `;
 
@@ -29,7 +53,7 @@ const TinySquareTop = styled.div`
   border: 2px solid var(--light-green);
   box-shadow: 0px 0px 15px 1px rgba(102, 255, 237, 0.8);
   z-index: 2;
-  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   ${AboutMeContent}:hover & {
     transform: rotate(45deg);
@@ -47,7 +71,7 @@ const TinySquareBottom = styled.div`
   box-shadow: 0px 0px 15px 1px rgba(102, 255, 237, 0.8);
   z-index: 2;
 
-  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
 
   ${AboutMeContent}:hover & {
     transform: rotate(45deg);
