@@ -4,6 +4,7 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 import Me from "../assets/me.png";
 import VisuallyHidden from "./VisuallyHidden";
 import Arrow from "../assets/arrow.svg";
+import { Link } from "react-scroll";
 
 const MainConteiner = styled(motion.div)`
   display: flex;
@@ -43,6 +44,10 @@ const SlideUp = styled(motion.div)`
     img {
       width: 24%;
       padding-left: 1rem;
+
+      @media (max-width: 600px) {
+        display: none;
+      }
     }
 
     &:hover {
@@ -72,13 +77,6 @@ const PinkLine = styled.div`
     border: 2px solid var(--pink);
     box-shadow: 0px 0px 15px 1px rgba(255, 51, 109, 0.8);
   }
-
-  ${SlideUp}:not(:hover) & {
-    transition-delay: 1s; /* Add a 1-second delay when not hovered */
-    transform: translate(0, 0);
-    border: none;
-    box-shadow: none;
-  }
 `;
 
 const MainSection = () => {
@@ -94,10 +92,12 @@ const MainSection = () => {
       </SlideDown>
       <SlideUp variants={fadeIn("up", "tween", 1, 1)}>
         <div>
-          <button>
-            Let <span>&rsquo;</span> s get in touch<span>!</span>
-            <img src={Arrow} alt="Arrow pointing to ways of contact"></img>
-          </button>
+          <Link to="contact" smooth={true} duration={1800}>
+            <button>
+              Let <span>&rsquo;</span> s get in touch<span>!</span>
+              <img src={Arrow} alt="Arrow pointing to ways of contact"></img>
+            </button>
+          </Link>
           <PinkLine></PinkLine>
         </div>
       </SlideUp>
