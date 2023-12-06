@@ -5,6 +5,11 @@ import SocialBar from "./SocialBar";
 
 const PaddingContainer = styled.div`
   padding: 0 4rem;
+
+  @media (max-width: 1000px) {
+    padding: 0;
+    margin: 0 auto;
+  }
 `;
 
 const FirstSectionContainer = styled.div`
@@ -25,7 +30,7 @@ const Conteiner = styled.div`
 
 export default function FirstSection( ) {
   return (
-    <PaddingContainer>
+    <PaddingContainer id="home">
       <FirstSectionContainer>
         <Header/>
         <Conteiner>

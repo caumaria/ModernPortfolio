@@ -32,7 +32,15 @@ const SkillsContent = styled.div`
   h4 {
     color: var(--pink);
     font-size: 1.5rem;
+    margin: 0 0 1rem 0;
+    text-align: center;
+  }
+
+  h5 {
+    color: var(--pink);
+    font-size: 1rem;
     margin: 0;
+    font-weight: 500;
     text-align: center;
   }
 
@@ -47,7 +55,7 @@ const SkillsContent = styled.div`
     &::before {
       content: '';
       position: absolute;
-      top: 81.5%;
+      top: 79%;
       left: 0;
       width: 100%;
       height: 2px;
@@ -144,7 +152,7 @@ export default function Skills() {
         ))}
       </section>
 
-      <h4>current interest in...</h4>
+      <h5>currently learning...</h5>
       <section>
         {Learning.map((skill) => (
           <>

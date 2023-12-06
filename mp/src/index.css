@@ -14,6 +14,7 @@
   --light-green: #66FFED;
   --pink: #FF336D;
   --lettering: #8A9997;
+  overflow-x: hidden;
 }
 
 body {

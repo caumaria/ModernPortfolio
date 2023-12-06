@@ -8,6 +8,7 @@ const PortfolioContainer = styled(motion.div)`
   color: var(--pink);
   max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 
   @media (max-width: 768px) {
     margin: 0;

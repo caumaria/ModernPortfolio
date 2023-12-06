@@ -52,7 +52,7 @@ const LineUp = styled.div`
 
 
 const ContainerDown = styled.div`
-  height: 12%;
+  height: 20%;
   width: 200px;
   display: flex;
   align-items: center;
@@ -60,7 +60,7 @@ const ContainerDown = styled.div`
 `;
 
 const LineDown = styled.div`
-  height: 13%;
+  height: 18%;
   position: absolute;
 
   ::before {

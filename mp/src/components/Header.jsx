@@ -5,10 +5,6 @@ import Navbar from "./Navbar";
 
 const MotionConteiner = styled(motion.div)`
   margin: 2rem 0;
-
-  @media (max-width: 1000px) {
-    display: none;
-  }
 `;
 const SlideInLeft = styled(motion.div)``;
 
@@ -16,6 +12,10 @@ const HeaderContainer = styled.div`
   height: 100vh;
   width: 200px;
   position: relative;
+
+  @media (max-width: 1000px) {
+    width: 0;
+  }
 `;
 
 const LineTop = styled.div`
@@ -40,6 +40,9 @@ const LineTop = styled.div`
       height: 100%;
     }
   }
+  @media (max-width: 1000px) {
+    display: none;
+  }
 `;
 
 const LineBottom = styled.div`
@@ -59,6 +62,9 @@ const LineBottom = styled.div`
     100% {
       height: 100%;
     }
+  }
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 

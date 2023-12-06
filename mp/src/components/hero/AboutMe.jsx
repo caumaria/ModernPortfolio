@@ -16,7 +16,7 @@ const AboutMeContent = styled.div`
     position: relative;
     color: var(--pink);
     font-size: 1.5rem;
-    margin: 1rem 0 0;
+    margin: 0;
     transition: transform .8s cubic-bezier(0.34, 1.56, 0.64, 1);
 
     &::before {
