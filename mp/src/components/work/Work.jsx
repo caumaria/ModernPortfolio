@@ -3,9 +3,8 @@ import { projects } from "../../data/data";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 
-const PortfolioContainer = styled.div`
+const PortfolioContainer = styled(motion.div)`
   padding: 0 10rem;
-  height: auto;
   color: var(--pink);
   max-width: 1400px;
   margin: 0 auto;
@@ -31,7 +30,7 @@ const PortfolioContainer = styled.div`
   }
 `;
 
-const WorkContainer = styled(motion.section)`
+const WorkContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   place-items: center;
@@ -115,17 +114,18 @@ const WorkBlueLine = styled.div`
 
 export default function Work() {
   return (
-    <PortfolioContainer id="work">
+    <PortfolioContainer id="work"
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: false, amount: 0.25 }}
+    >
       <div>
         <h1>Cau&rsquo;s Portfolio</h1>
         <p>My latest Work</p>
       </div>
 
       <WorkContainer
-        variants={staggerContainer}
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.25 }}
       >
         {projects.map((exp, i) => {
           return (
