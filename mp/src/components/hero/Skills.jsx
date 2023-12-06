@@ -6,8 +6,29 @@ const SkillsContent = styled.div`
   max-width: 360px;
   width: 100%;
   height: 360px;
-  border: 1px solid yellow;
   padding: 2rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--pink);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 47%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--pink);
+  }
+
   h4 {
     color: var(--pink);
     font-size: 1.5rem;
@@ -22,6 +43,16 @@ const SkillsContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 81.5%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--pink);
+    }
   }
 `;
 
@@ -34,10 +65,12 @@ const SkillContainer = styled.div`
   flex-direction: column;
   max-width: 60px;
   width: 100%;
+  z-index: 2;
+
   p {
     text-align: center;
     color: var(--light-green);
-    margin: 8px 0 0 0;
+    margin: 10px 0 0 0;
   }
 
   &:hover {
