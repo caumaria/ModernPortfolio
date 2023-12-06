@@ -4,7 +4,6 @@ import Skills from "./Skills";
 
 const HeroContainer = styled.div`
   background-color: var(--dark-green);
-  height: auto;
   width: 100%;
   display: flex;
   align-items: center;
