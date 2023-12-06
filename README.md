@@ -1,4 +1,4 @@
-# ModernPortfolio - FIGMA TO CODE
+# ModernPortfolio 
 
 New Modern Portfolio - Design by Marcelo Bernardo
 <hr>
