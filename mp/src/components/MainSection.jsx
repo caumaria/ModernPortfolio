@@ -44,6 +44,7 @@ const SlideUp = styled(motion.div)`
     img {
       width: 24%;
       padding-left: 1rem;
+      transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
 
       @media (max-width: 600px) {
         display: none;
@@ -53,6 +54,10 @@ const SlideUp = styled(motion.div)`
     &:hover {
       transform: translate(5px, 5px);
       box-shadow: 0px 0px 15px 1px rgba(102, 255, 237, 0.8);
+    }
+
+    &:hover img {
+      transform: translateX(15px);
     }
 
     &:hover span {

@@ -4,9 +4,8 @@ import Linkedin from "../../assets/linkedin.svg";
 import FollowMe from "../../assets/followme.svg";
 
 const IconContainer = styled.div`
-  height: 150px;
+  padding: 1rem;
   width: 200px;
-  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -14,8 +13,8 @@ const IconContainer = styled.div`
 
 const Icons = styled.div`
   display: flex;
+  gap: 1rem;
   flex-direction: column;
-  gap: 1.2rem;
   position: relative;
 `;
 
@@ -33,8 +32,7 @@ const LinkS = styled.a`
   }
 
   img {
-    width: 28px;
-    height: 28px;
+    width: 100%;
   }
 `;
 
