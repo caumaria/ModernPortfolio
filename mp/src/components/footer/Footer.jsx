@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 const FooterContainer = styled.div`
   background-color: var(--dark-green);
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
   min-height: 600px;
   height: 100%;
   font-size: 1.5rem;

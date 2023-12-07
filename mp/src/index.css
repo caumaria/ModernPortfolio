@@ -24,4 +24,6 @@ body {
   min-height: 100vh;
   font-family: 'Outfit', sans-serif;
   background-color: var(--main-background);
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
+  background-repeat: repeat;
 }

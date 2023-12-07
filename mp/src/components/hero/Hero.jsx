@@ -4,6 +4,7 @@ import Skills from "./Skills";
 
 const HeroContainer = styled.div`
   background-color: var(--dark-green);
+  background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
   width: 100%;
   display: flex;
   align-items: center;

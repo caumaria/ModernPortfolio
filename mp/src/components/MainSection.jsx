@@ -91,7 +91,7 @@ const MainSection = () => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 1 }}
+      viewport={{ once: true, amount: 1 }}
     >
       <SlideDown variants={fadeIn("down", "tween", 1, 1)}>
         <img src={Me} alt="Photo of Cau." />
