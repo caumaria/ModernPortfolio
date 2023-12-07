@@ -2,22 +2,19 @@ import styled from "styled-components";
 import { Link, animateScroll as scroll } from "react-scroll";
 
 const ContainerUl = styled.div`
-  height: 30%;
-  width: 200px;
   display: flex;
   align-items: center;
   justify-content: start;
-
-  @media (max-width: 1000px) {
-    width: 0;
-  }
+  height: 200px;
+  width: 200px;
 `;
 
 const Ul = styled.div`
-  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   li {
     cursor: pointer;
-    padding-bottom: 1.6rem;
     list-style: none;
     transition: transform 0.3s ease;
     &:hover {
@@ -36,14 +33,11 @@ const Ul = styled.div`
   }
 
   @media (max-width: 1000px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    top: 5%;
-    padding: 0 2rem;
+    flex-direction: row;
+    position: absolute;
+    top: 6%;
+    left: 6%;
     font-size: 1.5rem;
-    min-width: 420px;
   }
 `;
 

@@ -3,15 +3,18 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Navbar from "./Navbar";
 
-const MotionConteiner = styled(motion.div)`
-  margin: 2rem 0;
-`;
+const MotionConteiner = styled(motion.div)``;
 const SlideInLeft = styled(motion.div)``;
 
 const HeaderContainer = styled.div`
+  margin: 2rem 0;
   height: 100vh;
   width: 200px;
-  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   @media (max-width: 1000px) {
     width: 0;
@@ -19,8 +22,9 @@ const HeaderContainer = styled.div`
 `;
 
 const LineTop = styled.div`
-  position: absolute;
-  height: 30%;
+  position: relative;
+  height: 200px;
+  width: 200px;
 
   ::before {
     content: "";
@@ -29,25 +33,27 @@ const LineTop = styled.div`
     background: #ccfff9;
     position: absolute;
     animation: lineup 2s forwards 2.1s;
-  }
+    }
 
-  @keyframes lineup {
+    @keyframes lineup {
     0% {
-      top: 110%;
+      top: 100%;
     }
     100% {
-      top: 10%;
+      top: 0;
       height: 100%;
     }
   }
+
   @media (max-width: 1000px) {
     display: none;
   }
 `;
 
 const LineBottom = styled.div`
-  height: 30%;
-  position: absolute;
+  position: relative;
+  height: 200px;
+  width: 200px;
 
   ::before {
     content: "";
@@ -68,14 +74,7 @@ const LineBottom = styled.div`
   }
 `;
 
-const Container = styled.div`
-  height: 36%;
-  width: 200px;
-`;
-
-
 const Header = () => {
-
   return (
     <MotionConteiner
       variants={staggerContainer}
@@ -85,24 +84,21 @@ const Header = () => {
     >
       <SlideInLeft variants={fadeIn("right", "tween", 2, 1)}>
         <HeaderContainer>
-          <Container>
-            <LineTop>
-              <div></div>
-            </LineTop>
-          </Container>
+
+          <LineTop>
+            <div></div>
+          </LineTop>
 
           <Navbar />
 
-          <Container>
-            <LineBottom>
-              <div></div>
-            </LineBottom>
-          </Container>
+          <LineBottom>
+            <div></div>
+          </LineBottom>
+
         </HeaderContainer>
       </SlideInLeft>
     </MotionConteiner>
   );
 };
-
 
 export default Header;
