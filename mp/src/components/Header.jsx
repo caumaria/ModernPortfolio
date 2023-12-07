@@ -6,8 +6,9 @@ import Navbar from "./Navbar";
 const MotionConteiner = styled(motion.div)``;
 const SlideInLeft = styled(motion.div)``;
 
-const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div`
   margin: 2rem 0;
+  height: 100dvh;
   height: 100vh;
   width: 200px;
 

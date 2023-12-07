@@ -2,33 +2,21 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Icon from "./main section/Icons";
+import { HeaderContainer } from "./Header";
 
-
-const MotionSocial = styled(motion.div)`
-  @media (max-width: 1000px) {
-    display: none;
-  }
-`;
+const MotionSocial = styled(motion.div)``;
 const SlideInRight = styled(motion.div)``;
 
-const SocialContainer = styled.div`
-  height: 100vh;
-  width: 200px;
-`;
-
 const ContainerUp = styled.div`
-  position: relative;
-  height: 58%;
-  width: 200px;
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-top: 3rem;
+  width: 200px;
 `;
 
 const LineUp = styled.div`
-  height: 100%;
-  position: absolute;
+  position: relative;
+  min-height: 418px;
 
   ::after {
     content: "";
@@ -50,18 +38,16 @@ const LineUp = styled.div`
   }
 `;
 
-
 const ContainerDown = styled.div`
-  height: 20%;
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: end;
-`;
+  `;
 
 const LineDown = styled.div`
-  height: 18%;
-  position: absolute;
+  min-height: 50px;
+  position: relative;
 
   ::before {
     content: "";
@@ -88,7 +74,8 @@ const SocialBar = () => {
       viewport={{ once: false, amount: 0.25 }}
     >
       <SlideInRight variants={fadeIn("left", "tween", 2, 1)}>
-        <SocialContainer>
+
+        <HeaderContainer>
           <ContainerUp>
             <LineUp>
               <div></div>
@@ -102,7 +89,8 @@ const SocialBar = () => {
               <div></div>
             </LineDown>
           </ContainerDown>
-        </SocialContainer>
+        </HeaderContainer>
+
       </SlideInRight>
     </MotionSocial>
   );

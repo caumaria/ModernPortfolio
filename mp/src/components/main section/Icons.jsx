@@ -3,25 +3,27 @@ import Github from "../../assets/github.svg";
 import Linkedin from "../../assets/linkedin.svg";
 import FollowMe from "../../assets/followme.svg";
 
-const IconContainer = styled.div`
-  padding: 1rem;
-  width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: end;
-`;
-
-const Icons = styled.div`
-  display: flex;
-  gap: 1rem;
-  flex-direction: column;
-  position: relative;
-`;
-
 const rotateAndMove = keyframes`
   to {
     transform: translateX(20px) translateY(-8px) rotate(-10deg);
   }
+`;
+
+const IconContainer = styled.div`
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 1rem 0;
+`;
+
+const Icons = styled.div`
+  height: 100px;
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+  position: relative;
+  left: 10%;
 `;
 
 const LinkS = styled.a`
@@ -30,7 +32,6 @@ const LinkS = styled.a`
   &:hover img {
     animation: ${rotateAndMove} 0.2s forwards cubic-bezier(0.5, 0, 0.25, 2.33);
   }
-
   img {
     width: 100%;
   }
@@ -39,7 +40,7 @@ const LinkS = styled.a`
 const Follow = styled.div`
   display: none;
   position: absolute;
-  right: -130%;
+  right: -100%;
 
   img {
     width: 216px;

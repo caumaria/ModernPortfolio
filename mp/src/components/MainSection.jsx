@@ -12,6 +12,7 @@ const MainConteiner = styled(motion.div)`
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+  margin-bottom: 2rem;
 `;
 
 const SlideDown = styled(motion.div)`
