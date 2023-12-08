@@ -10,7 +10,8 @@ const FooterSectionContainer = styled.div`
     max-width: 1400px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10rem;
     @media (max-width: 1000px) {
       flex-direction: column;
     }

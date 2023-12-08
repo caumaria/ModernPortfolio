@@ -6,7 +6,11 @@ import Github from "../../assets/github.svg";
 const FooterLinksContainer = styled.div`
   width: 400px;
   min-height: 360px;
-  border-right: 2px solid var(--pink);
+  border-right: 2px solid var(--lettering);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   h6 {
     text-align: center;
     font-size: 1rem;
@@ -18,7 +22,8 @@ const FooterLinksContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 4rem;
+    padding-top: 2rem;
   }
 
   a {
@@ -43,7 +48,6 @@ const Cofffee = styled.a`
 export default function FooterLinks() {
   return (
     <FooterLinksContainer>
-      <h6>Social Media</h6>
       <div>
         <Link href="https://github.com/caumaria" target="blank">
           <img src={Github} alt="Github de Cau" />
@@ -59,12 +63,12 @@ export default function FooterLinks() {
         </Link>
       </div>
 
-      <h6>01 coffee a day keeps the bugs away...</h6>
       <Cofffee href="https://www.buymeacoffee.com/cau_">
         <div>
           <img src="/coffee.jpg" alt="coffee cup" />
         </div>
       </Cofffee>
+      <h6>01 coffee a day keeps the bugs away...</h6>
     </FooterLinksContainer>
   );
 }

@@ -4,7 +4,12 @@ const FooterAboutContainer = styled.div`
   width: 400px;
   min-height: 360px;
   padding-left: 1rem;
-  border-left: 2px solid var(--pink);
+  border-left: 2px solid var(--lettering);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   h6 {
     text-align: center;
     font-size: 1rem;
@@ -63,7 +68,7 @@ export default function FooterAbout() {
           I love to talk about games and new technologies, feel free to contact
           me anytime.
         </p>
-        <p>Feedbacks are appreciated. ♥</p>
+        <p>Feedbacks are appreciated ♥</p>
         <h4>
           Get in
           <a href="mailto: cau.ugolini@gmail.com" data-content="touch">
