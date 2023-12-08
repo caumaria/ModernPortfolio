@@ -1,87 +1,65 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
+import FooterSection from "./FooterSection";
 
 const FooterContainer = styled.div`
   background-color: var(--dark-green);
   background-image: url("https://www.transparenttextures.com/patterns/black-orchid.png");
-  min-height: 600px;
+  min-height: 700px;
   height: 100%;
   font-size: 1.5rem;
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 
   section {
-    max-width: 1400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 4rem;
-    @media (max-width: 1000px) {
-      flex-direction: column;
-    }
+    width: 100%;
+    margin: 0 auto;
   }
-  div {
-    width: 400px;
-    max-height: 400px;
-    border: 1px solid red;
-  }
-  h4 {
-    margin: 0;
+
+  h5 {
+    color: var(--pink);
     font-size: 3rem;
+    margin: 0;
+    padding: 3rem 0;
   }
 
-  a > img {
+  pre {
+    margin-top: 8rem;
+    opacity: .7;
+    font-size: small;
   }
-
 `;
 
 const TopScrollLink = styled.div`
+  position: absolute;
+  bottom: 6%;
+  right: 3%;
   img {
     width: 60px;
     cursor: pointer;
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
-`;
 
-const Cofffee = styled.a`
-  img {
-    width: 80px;
-    height: 60px;
+  &:hover img {
+    transform: scale(1.2);
   }
 `;
 
 export default function Footer() {
   return (
-    <>
-      <FooterContainer id="contact">
-        <section>
-          <div>
-            <p>What&rsquo;s next?</p>
-            <h4>
-              Get in
-              <a href="mailto: cau.ugolini@gmail.com">touch</a>
-            </h4>
-            <Cofffee href="https://www.buymeacoffee.com/cau_">
-              <img src="/coffee.jpg" alt="" />
-            </Cofffee>
-          </div>
-
-          <div>
-            <p>
-              I love to talk about games and new technologies, feel free to
-              contact me anytime.
-            </p>
-            <p>Feedbacks are appreciated ♥</p>
-          </div>
-        </section>
-      </FooterContainer>
+    <FooterContainer id="contact">
+      <h5>What&rsquo;s next?</h5>
+      <section>
+        <FooterSection />
+      </section>
 
       <TopScrollLink>
         <Link to="home" smooth={true} duration={1200}>
           <img src="/arrow-up.png" alt="arrow scroll to top" />
         </Link>
       </TopScrollLink>
-    </>
+
+      <pre>© Cau Ugolini 2023, Dezembro</pre>
+    </FooterContainer>
   );
 }
