@@ -33,6 +33,11 @@ const FooterLinksContainer = styled.div`
     img {
       width: 80px;
       height: 80px;
+      transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+
+      &:hover {
+      transform: scale(1.1);
+    }
     }
   }
 `;
@@ -42,6 +47,10 @@ const Cofffee = styled.a`
     border-radius: 50%;
     width: 80px;
     height: 60px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 `;
 
@@ -63,7 +72,7 @@ export default function FooterLinks() {
         </Link>
       </div>
 
-      <Cofffee href="https://www.buymeacoffee.com/cau_">
+      <Cofffee href="https://www.buymeacoffee.com/cau_" target="blank">
         <div>
           <img src="/coffee.jpg" alt="coffee cup" />
         </div>

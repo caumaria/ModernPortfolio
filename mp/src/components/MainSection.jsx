@@ -32,6 +32,7 @@ const MobileContainer = styled(motion.div)`
   display: none;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 
   img {
     width: 100%;
@@ -39,6 +40,10 @@ const MobileContainer = styled(motion.div)`
 
   @media (max-width: 1000px) {
     display: flex;
+  }
+  p {
+    max-width: 600px;
+    text-align: center;
   }
 `;
 
@@ -56,6 +61,11 @@ const MainSection = () => {
 
       <MobileContainer variants={fadeIn("down", "tween", 1, 1)}>
         <img src={MobileProfilePic} alt="Photo of Cau." />
+
+        <p>A driven and dynamic individual with a goal to create
+          exceptional web & apps experiences. Let`s work together to make a
+          lasting impact.
+        </p>
       </MobileContainer>
 
       <MainSecButton />
@@ -65,7 +75,7 @@ const MainSection = () => {
           Cau`s Portfolio, software engineer looking for internship/junior level
           position. A driven and dynamic individual with a goal to create
           exceptional web & apps experiences. Let`s work together to make a
-          lasting impact. Tags de tecnologias: React, JavaScript, Typescript,
+          lasting impact. Tech Tags: React, JavaScript, Typescript,
           NextJS
         </p>
       </VisuallyHidden>
