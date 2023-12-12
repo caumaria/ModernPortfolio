@@ -4,7 +4,11 @@ import { fadeIn, staggerContainer } from "../utils/motion";
 import Icon from "./main section/Icons";
 import { HeaderContainer } from "./Header";
 
-const MotionSocial = styled(motion.div)``;
+const MotionSocial = styled(motion.div)`
+  @media (max-width: 1000px) {
+    display: none;
+  }
+`;
 const SlideInRight = styled(motion.div)``;
 
 const ContainerUp = styled.div`
@@ -43,7 +47,7 @@ const ContainerDown = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
-  `;
+`;
 
 const LineDown = styled.div`
   min-height: 78px;
@@ -74,7 +78,6 @@ const SocialBar = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <SlideInRight variants={fadeIn("left", "tween", 2, 1)}>
-
         <HeaderContainer>
           <ContainerUp>
             <LineUp>
@@ -90,7 +93,6 @@ const SocialBar = () => {
             </LineDown>
           </ContainerDown>
         </HeaderContainer>
-
       </SlideInRight>
     </MotionSocial>
   );

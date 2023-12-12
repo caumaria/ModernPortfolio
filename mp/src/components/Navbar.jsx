@@ -33,12 +33,11 @@ const Ul = styled.div`
   }
 
   @media (max-width: 1000px) {
+    min-width: 360px;
     flex-direction: row;
-    position: absolute;    
+    position: absolute;
     top: 0;
     left: 0;
-    font-size: 1.5rem;
-    min-width: 500px;
     padding: 2rem;
     gap: 2rem;
   }
