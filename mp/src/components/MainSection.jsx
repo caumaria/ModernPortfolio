@@ -45,6 +45,26 @@ const MobileContainer = styled(motion.div)`
     max-width: 600px;
     text-align: center;
   }
+
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    p {
+      width: auto;
+      background-color: var(--pink);
+      border-radius: 8px;
+      padding: 0 0.5rem;
+      transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
 `;
 
 const MainSection = () => {
@@ -57,28 +77,35 @@ const MainSection = () => {
     >
       <DesktopContainer variants={fadeIn("down", "tween", 1, 1)}>
         <img src={DesktopProfilePic} alt="Photo of Cau." />
+        <VisuallyHidden>
+          <p>
+            Cau`s Portfolio, software engineer. A driven and dynamic individual
+            with a goal to create exceptional web & apps experiences. Let`s work
+            together to make a lasting impact. Tech Tags: React, JavaScript,
+            Typescript, NextJS.
+          </p>
+        </VisuallyHidden>
       </DesktopContainer>
 
       <MobileContainer variants={fadeIn("down", "tween", 1, 1)}>
         <img src={MobileProfilePic} alt="Photo of Cau." />
 
-        <p>A driven and dynamic individual with a goal to create
-          exceptional web & apps experiences. Let`s work together to make a
-          lasting impact.
+        <div>
+          <p>React</p>
+          <p>Javascript</p>
+          <p>Typescript</p>
+          <p>CSS</p>
+          <p>NextJS</p>
+          <p>NodeJs</p>
+        </div>
+
+        <p>
+          A driven and dynamic individual with a goal to create exceptional web
+          & apps experiences. Let`s work together to make a lasting impact.
         </p>
       </MobileContainer>
 
       <MainSecButton />
-
-      <VisuallyHidden>
-        <p>
-          Cau`s Portfolio, software engineer looking for internship/junior level
-          position. A driven and dynamic individual with a goal to create
-          exceptional web & apps experiences. Let`s work together to make a
-          lasting impact. Tech Tags: React, JavaScript, Typescript,
-          NextJS
-        </p>
-      </VisuallyHidden>
     </MainConteiner>
   );
 };
