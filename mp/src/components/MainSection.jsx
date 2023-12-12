@@ -46,12 +46,13 @@ const MobileContainer = styled(motion.div)`
     text-align: center;
   }
 
-  div {
+  section {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    flex-wrap: wrap;
     p {
       width: auto;
       background-color: var(--pink);
@@ -90,14 +91,14 @@ const MainSection = () => {
       <MobileContainer variants={fadeIn("down", "tween", 1, 1)}>
         <img src={MobileProfilePic} alt="Photo of Cau." />
 
-        <div>
+        <section>
           <p>React</p>
           <p>Javascript</p>
           <p>Typescript</p>
           <p>CSS</p>
           <p>NextJS</p>
           <p>NodeJs</p>
-        </div>
+        </section>
 
         <p>
           A driven and dynamic individual with a goal to create exceptional web
