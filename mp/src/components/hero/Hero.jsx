@@ -24,7 +24,7 @@ const AboutMeContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 8rem;
 
   @media (max-width: 1000px) {
     flex-direction: column;
