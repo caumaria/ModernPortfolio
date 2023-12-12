@@ -55,6 +55,10 @@ const FooterAboutContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 1000px) {
+    border: none;
+  }
 `;
 
 export default function FooterAbout() {

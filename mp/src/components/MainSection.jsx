@@ -35,6 +35,7 @@ const MobileContainer = styled(motion.div)`
   flex-direction: column;
 
   img {
+    margin-left: 8rem;
     width: 100%;
   }
 
@@ -44,6 +45,7 @@ const MobileContainer = styled(motion.div)`
   p {
     max-width: 600px;
     text-align: center;
+    padding: 0 1rem;
   }
 
   section {
@@ -51,15 +53,19 @@ const MobileContainer = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.2rem;
     flex-wrap: wrap;
+    margin: 2rem 0;
+
     p {
       width: auto;
       background-color: var(--pink);
       border-radius: 8px;
-      padding: 0 0.5rem;
+      padding: 0 1rem;
       transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
       cursor: pointer;
+      color: #33000E;
+      font-weight: 700;
 
       &:hover {
         transform: scale(1.1);

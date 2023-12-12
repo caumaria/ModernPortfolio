@@ -39,6 +39,10 @@ const FooterLinksContainer = styled.div`
     }
     }
   }
+
+  @media (max-width: 1000px) {
+    border: none;
+  }
 `;
 
 const Cofffee = styled.a`
