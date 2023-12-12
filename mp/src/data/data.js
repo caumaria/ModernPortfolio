@@ -36,7 +36,7 @@ export const projects = [
     about: "Portfolio Card in dark mode, the style designed by the developer Keita Yamada. ",
     year: "2022",
     url: "https://github.com/caumaria/diary",
-    web: "https://diary-cau.vercel.app",
+    web: "https://cau-portfoliocard.vercel.app/",
     img: "portfoliocard.png",
   },
 ];
