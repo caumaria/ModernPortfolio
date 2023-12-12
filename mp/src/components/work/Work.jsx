@@ -104,7 +104,8 @@ const WorkBlueLine = styled.div`
   top: 19%;
   left: 24%;
   z-index: -1;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+    opacity 0.3s ease;
   opacity: 0;
 
   ${AnimatedSection}:hover & {
@@ -115,19 +116,19 @@ const WorkBlueLine = styled.div`
 
 export default function Work() {
   return (
-    <PortfolioContainer id="work"
-    variants={staggerContainer}
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, amount: 0.25 }}
+    <PortfolioContainer
+      id="work"
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
     >
       <div>
         <h1>Cau&rsquo;s Portfolio</h1>
         <p>My latest Work</p>
       </div>
 
-      <WorkContainer
-      >
+      <WorkContainer>
         {projects.map((exp, i) => {
           return (
             <AppCard variants={fadeIn("up", "tween", (i + 1) * 0.3, 1)} key={i}>

@@ -34,10 +34,13 @@ const Ul = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: row;
-    position: absolute;
-    top: 6%;
-    left: 6%;
+    position: absolute;    
+    top: 0;
+    left: 0;
     font-size: 1.5rem;
+    min-width: 500px;
+    padding: 2rem;
+    gap: 2rem;
   }
 `;
 

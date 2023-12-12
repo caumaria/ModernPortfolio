@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
-import Me from "../assets/me.png";
+import DesktopProfilePic from "../assets/me.png";
+import MobileProfilePic from "../assets/mobilepic.png";
 import VisuallyHidden from "./VisuallyHidden";
-import Arrow from "../assets/arrow.svg";
-import { Link } from "react-scroll";
+import MainSecButton from "./main section/MainSecButton";
 
 const MainConteiner = styled(motion.div)`
   display: flex;
@@ -15,73 +15,30 @@ const MainConteiner = styled(motion.div)`
   margin-bottom: 2rem;
 `;
 
-const SlideDown = styled(motion.div)`
+const DesktopContainer = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: center;
   img {
     width: 100%;
   }
-`;
 
-const SlideUp = styled(motion.div)`
-  position: relative;
-  display: inline-block;
-
-  button {
-    position: relative;
-    background-color: var(--light-green);
-    color: var(--dark-green);
-    padding: 0.8rem;
-    font-size: 1.8rem;
-    font-family: "Outfit";
-    font-weight: 600;
-    cursor: pointer;
-    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: none;
-    overflow: hidden;
-    z-index: 2;
-
-    img {
-      width: 24%;
-      padding-left: 1rem;
-      transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-      @media (max-width: 600px) {
-        display: none;
-      }
-    }
-
-    &:hover {
-      transform: translate(5px, 5px);
-      box-shadow: 0px 0px 15px 1px rgba(102, 255, 237, 0.8);
-    }
-
-    &:hover img {
-      transform: translateX(15px);
-    }
-
-    &:hover span {
-      color: var(--pink);
-    }
+  @media (max-width: 1000px) {
+    display: none;
   }
 `;
 
-const PinkLine = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 98%;
-  height: 95%;
-  border: none;
-  transform-origin: bottom right;
-  transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-  pointer-events: none;
+const MobileContainer = styled(motion.div)`
+  display: none;
+  align-items: center;
+  justify-content: center;
 
-  ${SlideUp}:hover & {
-    transform: translate(-2px, -2px);
-    border: 2px solid var(--pink);
-    box-shadow: 0px 0px 15px 1px rgba(255, 51, 109, 0.8);
+  img {
+    width: 100%;
+  }
+
+  @media (max-width: 1000px) {
+    display: flex;
   }
 `;
 
@@ -93,20 +50,15 @@ const MainSection = () => {
       whileInView="show"
       viewport={{ once: true, amount: 1 }}
     >
-      <SlideDown variants={fadeIn("down", "tween", 1, 1)}>
-        <img src={Me} alt="Photo of Cau." />
-      </SlideDown>
-      <SlideUp variants={fadeIn("up", "tween", 1, 1)}>
-        <div>
-          <Link to="contact" smooth={true} duration={1800}>
-            <button>
-              Let <span>&rsquo;</span> s get in touch<span>!</span>
-              <img src={Arrow} alt="Arrow pointing to ways of contact"></img>
-            </button>
-          </Link>
-          <PinkLine></PinkLine>
-        </div>
-      </SlideUp>
+      <DesktopContainer variants={fadeIn("down", "tween", 1, 1)}>
+        <img src={DesktopProfilePic} alt="Photo of Cau." />
+      </DesktopContainer>
+
+      <MobileContainer variants={fadeIn("down", "tween", 1, 1)}>
+        <img src={MobileProfilePic} alt="Photo of Cau." />
+      </MobileContainer>
+
+      <MainSecButton />
 
       <VisuallyHidden>
         <p>
