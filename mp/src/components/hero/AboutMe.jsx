@@ -45,8 +45,8 @@ const AboutMeContent = styled.div`
 
 const TinySquareTop = styled.div`
   position: absolute;
-  top: -5%;
-  left: -5.2%;
+  top: -5.1%;
+  left: -5.3%;
   width: 40px;
   height: 40px;
   background-color: none;
@@ -62,8 +62,8 @@ const TinySquareTop = styled.div`
 
 const TinySquareBottom = styled.div`
   position: absolute;
-  bottom: -5%;
-  right: -5.2%;
+  bottom: -5.1%;
+  right: -5.3%;
   width: 40px;
   height: 40px;
   background-color: none;
