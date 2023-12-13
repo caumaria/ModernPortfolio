@@ -13,7 +13,6 @@ const FooterContainer = styled.div`
 
   section {
     width: 100%;
-    margin: 1rem auto;
   }
 
   h5 {

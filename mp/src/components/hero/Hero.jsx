@@ -11,10 +11,15 @@ const HeroContainer = styled.div`
   justify-content: center;
   flex-direction: column;
   padding-bottom: 8rem;
+  
   h2 {
     color: var(--pink);
     font-size: 3rem;
     margin: 4rem;
+  }
+
+  @media (max-width: 1000px) {
+    padding-bottom: 3rem;
   }
 `;
 
@@ -28,6 +33,7 @@ const AboutMeContainer = styled.div`
 
   @media (max-width: 1000px) {
     flex-direction: column;
+    gap: 3rem;
   }
 `;
 

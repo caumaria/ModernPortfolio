@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const FooterAboutContainer = styled.div`
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   min-height: 360px;
   padding-left: 1rem;
   border-left: 2px solid var(--lettering);
@@ -58,6 +59,7 @@ const FooterAboutContainer = styled.div`
 
   @media (max-width: 1000px) {
     border: none;
+    padding: 0;
   }
 `;
 

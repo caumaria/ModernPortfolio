@@ -10,7 +10,7 @@ const PortfolioContainer = styled(motion.div)`
   margin: 0 auto;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 400px) {
     margin: 0;
     padding: 0;
   }
@@ -35,6 +35,7 @@ const WorkContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   place-items: center;
+  justify-content: center;
   width: 100%;
 `;
 
@@ -69,7 +70,8 @@ const ImageContainer = styled.div`
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), rotate 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
+      rotate 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) 0.3s;
 
     ${AnimatedSection}:hover & {
       transform: translate(20px, 5px) rotate(15deg);

@@ -90,7 +90,7 @@ const Header = () => {
             <div></div>
           </LineTop>
 
-          <Navbar />
+          <Navbar/>
 
           <LineBottom>
             <div></div>

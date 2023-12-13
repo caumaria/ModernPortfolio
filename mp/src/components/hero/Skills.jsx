@@ -9,18 +9,27 @@ const SkillsContent = styled.div`
   padding: 2rem;
   position: relative;
 
+  @media (max-width: 400px) {
+    max-width: 300px;
+    padding: 1rem;
+  }
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 25%;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: var(--pink);
+
+    @media (max-width: 400px) {
+      top: 23%;
+    }
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 47%;
     left: 0;
@@ -53,13 +62,17 @@ const SkillsContent = styled.div`
     justify-content: center;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       top: 79%;
       left: 0;
       width: 100%;
       height: 2px;
       background-color: var(--pink);
+
+      @media (max-width: 400px) {
+        top: 81%;
+      }
     }
   }
 `;
@@ -121,6 +134,11 @@ const SkillImage = styled.div`
 
   ${SkillContainer}:hover & {
     transform: scale(1.2);
+  }
+
+  @media (max-width: 400px) {
+    top: -4%;
+    right: 0;
   }
 `;
 

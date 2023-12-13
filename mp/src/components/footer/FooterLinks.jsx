@@ -3,7 +3,8 @@ import Linkedin from "../../assets/linkedin.svg";
 import Github from "../../assets/github.svg";
 
 const FooterLinksContainer = styled.div`
-  width: 400px;
+  max-width: 400px;
+  width: 100%;
   min-height: 360px;
   border-right: 2px solid var(--lettering);
   display: flex;

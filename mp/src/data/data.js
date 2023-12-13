@@ -55,11 +55,11 @@ export const skillset = [
     img: "ts.png",
   },
   {
-    name: "Next JS",
+    name: "Next",
     img: "next.webp",
   },
   {
-    name: "Node JS",
+    name: "Node",
     img: "node.png",
   },
   {

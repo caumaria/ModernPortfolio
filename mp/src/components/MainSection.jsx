@@ -11,7 +11,7 @@ const MainConteiner = styled(motion.div)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   margin-bottom: 2rem;
 `;
 
@@ -33,9 +33,9 @@ const MobileContainer = styled(motion.div)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
 
   img {
-    margin-left: 8rem;
     width: 100%;
   }
 
@@ -45,7 +45,7 @@ const MobileContainer = styled(motion.div)`
   p {
     max-width: 600px;
     text-align: center;
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   section {
@@ -53,9 +53,8 @@ const MobileContainer = styled(motion.div)`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1.2rem;
+    gap: 1rem;
     flex-wrap: wrap;
-    margin: 2rem 0;
 
     p {
       width: auto;
@@ -66,6 +65,7 @@ const MobileContainer = styled(motion.div)`
       cursor: pointer;
       color: #33000E;
       font-weight: 700;
+      margin: 0;
 
       &:hover {
         transform: scale(1.1);

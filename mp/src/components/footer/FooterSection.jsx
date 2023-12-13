@@ -8,12 +8,15 @@ const FooterSectionContainer = styled.div`
   
   section {
     max-width: 1400px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12rem;
+
     @media (max-width: 1000px) {
       flex-direction: column;
+      gap: 0;
     }
   }
 `;
