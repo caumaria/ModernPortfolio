@@ -131,14 +131,19 @@ const SkillImage = styled.div`
     border: none;
     border-radius: 50%;
   }
-
   ${SkillContainer}:hover & {
     transform: scale(1.2);
   }
 
   @media (max-width: 768px) {
     top: -4%;
-    right: 0;
+    left: -2%;
+  }
+`;
+
+const LearningImgs = styled(SkillImage)`
+  @media (max-width: 768px) {
+    left: 10%;
   }
 `;
 
@@ -157,31 +162,27 @@ export default function Skills() {
       <h4>Skillset</h4>
 
       <section>
-        {skillset.map((skill) => (
-          <>
-            <SkillContainer>
-              <Skill />
-              <SkillImage>
-                <img src={skill.img} alt={skill.name} />
-              </SkillImage>
-              <p>{skill.name}</p>
-            </SkillContainer>
-          </>
+        {skillset.map((skill, i) => (
+          <SkillContainer key={i}>
+            <Skill />
+            <SkillImage>
+              <img src={skill.img} alt={skill.name} />
+            </SkillImage>
+            <p>{skill.name}</p>
+          </SkillContainer>
         ))}
       </section>
 
       <h5>currently learning...</h5>
       <section>
-        {Learning.map((skill) => (
-          <>
-            <SkillContainer>
-              <Skill />
-              <SkillImage>
-                <img src={skill.img} alt={skill.name} />
-              </SkillImage>
-              <p>{skill.name}</p>
-            </SkillContainer>
-          </>
+        {Learning.map((skill, i) => (
+          <SkillContainer key={i}>
+            <Skill />
+            <LearningImgs>
+              <img src={skill.img} alt={skill.name} />
+            </LearningImgs>
+            <p>{skill.name}</p>
+          </SkillContainer>
         ))}
       </section>
     </SkillsContent>

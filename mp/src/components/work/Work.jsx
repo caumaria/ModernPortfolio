@@ -4,7 +4,6 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 
 const PortfolioContainer = styled(motion.div)`
-  padding: 0 10rem;
   color: var(--pink);
   max-width: 1400px;
   margin: 0 auto;

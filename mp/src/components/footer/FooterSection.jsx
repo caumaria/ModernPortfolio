@@ -3,9 +3,11 @@ import FooterLinks from "./FooterLinks";
 import FooterAbout from "./FooterAbout";
 
 const FooterSectionContainer = styled.div`
-  text-align: start;
   font-size: large;
-  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   section {
     max-width: 1400px;
     width: 100%;
