@@ -17,7 +17,7 @@ export const projects = [
   },
   {
     name: "sneakers",
-    about: "Landing page for products, from FrontendMentor challenge(intermidiate)",
+    about: "Landing page for products, from FrontendMentor challenge(intermediate)",
     year: "2022",
     url: "https://github.com/caumaria/productLandingPage",
     web: "https://productlandingpage-cau.vercel.app",
