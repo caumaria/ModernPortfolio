@@ -32,14 +32,15 @@ const Ul = styled.div`
     }
   }
 
-  @media (max-width: 1000px) {
-    min-width: 360px;
+  @media (max-width: 768px) {
+    min-width: 320px;
     flex-direction: row;
     position: absolute;
     top: 0;
     left: 0;
-    padding: 2rem;
+    padding: 1rem;
     gap: 2rem;
+    overflow: hidden;
   }
 `;
 

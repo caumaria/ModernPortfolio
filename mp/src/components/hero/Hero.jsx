@@ -10,12 +10,12 @@ const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
   
   h2 {
     color: var(--pink);
     font-size: 3rem;
-    margin: 4rem;
+    margin: 4rem 0;
   }
 
   @media (max-width: 1000px) {
@@ -30,6 +30,8 @@ const AboutMeContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 10rem;
+  overflow: hidden;
+  padding: 2.5rem 0;
 
   @media (max-width: 1000px) {
     flex-direction: column;

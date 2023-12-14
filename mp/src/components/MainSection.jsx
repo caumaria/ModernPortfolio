@@ -11,7 +11,7 @@ const MainConteiner = styled(motion.div)`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 2rem;
 `;
 
@@ -34,6 +34,7 @@ const MobileContainer = styled(motion.div)`
   justify-content: center;
   flex-direction: column;
   gap: 1rem;
+  padding: 0 1rem;
 
   img {
     width: 100%;

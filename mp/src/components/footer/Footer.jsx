@@ -1,6 +1,7 @@
 import { Link } from "react-scroll";
 import styled from "styled-components";
 import FooterSection from "./FooterSection";
+import ArrowUp from '/arrowUp.svg';
 
 const FooterContainer = styled.div`
   background-color: var(--dark-green);
@@ -34,13 +35,17 @@ const TopScrollLink = styled.div`
   bottom: 6%;
   right: 3%;
   img {
-    width: 60px;
+    width: 50px;
     cursor: pointer;
     transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   }
 
   &:hover img {
     transform: scale(1.2);
+  }
+
+  @media (max-width: 768px) {
+    padding-right: 1rem;
   }
 `;
 
@@ -54,7 +59,7 @@ export default function Footer() {
 
       <TopScrollLink>
         <Link to="home" smooth={true} duration={1200}>
-          <img src="/arrow-up.png" alt="arrow scroll to top" />
+          <img src={ArrowUp} alt="arrow scroll to top" />
         </Link>
       </TopScrollLink>
 

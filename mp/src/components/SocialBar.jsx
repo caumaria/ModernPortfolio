@@ -20,7 +20,7 @@ const ContainerUp = styled.div`
 
 const LineUp = styled.div`
   position: relative;
-  min-height: 390px;
+  min-height: 400px;
 
   ::after {
     content: "";
@@ -50,7 +50,7 @@ const ContainerDown = styled.div`
 `;
 
 const LineDown = styled.div`
-  min-height: 78px;
+  min-height: 68px;
   position: relative;
 
   ::before {
