@@ -9,7 +9,7 @@ const SkillsContent = styled.div`
   padding: 2rem;
   position: relative;
 
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     max-width: 300px;
     padding: 1rem;
   }
@@ -23,7 +23,7 @@ const SkillsContent = styled.div`
     height: 2px;
     background-color: var(--pink);
 
-    @media (max-width: 400px) {
+    @media (max-width: 768px) {
       top: 23%;
     }
   }
@@ -70,7 +70,7 @@ const SkillsContent = styled.div`
       height: 2px;
       background-color: var(--pink);
 
-      @media (max-width: 400px) {
+      @media (max-width: 768px) {
         top: 81%;
       }
     }
@@ -136,7 +136,7 @@ const SkillImage = styled.div`
     transform: scale(1.2);
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     top: -4%;
     right: 0;
   }

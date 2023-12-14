@@ -44,7 +44,7 @@ const AboutMeContent = styled.div`
     }
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     max-width: 240px;
     height: 460px;
   }
@@ -66,7 +66,7 @@ const TinySquareTop = styled.div`
     transform: rotate(45deg);
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     top: -4.2%;
     left: -7.2%;
   }
@@ -89,7 +89,7 @@ const TinySquareBottom = styled.div`
     transform: rotate(45deg);
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 768px) {
     bottom: -4.2%;
     right: -7.2%;
   }
