@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import VisuallyHidden from "../VisuallyHidden";
 import { Learning, skillset } from "../../data/data";
+import { fadeIn } from "../../utils/motion";
+import { motion } from "framer-motion";
 
-const SkillsContent = styled.div`
+const SkillsContent = styled(motion.div)`
   max-width: 360px;
   width: 100%;
   height: 360px;
@@ -93,23 +94,12 @@ const SkillContainer = styled.div`
     color: var(--light-green);
     margin: 10px 0 0 0;
   }
-
-  &:hover {
-    p {
-      color: var(--pink);
-    }
-  }
 `;
 
 const Skill = styled.div`
   width: 40px;
   height: 40px;
   border: 2px solid var(--light-green);
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-
-  ${SkillContainer}:hover & {
-    transform: rotate(45deg) scale(1.2);
-  }
 `;
 
 const SkillImage = styled.div`
@@ -124,15 +114,11 @@ const SkillImage = styled.div`
   width: 50px;
   border-radius: 50%;
   border: none;
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   img {
     width: 100%;
     height: 100%;
     border: none;
     border-radius: 50%;
-  }
-  ${SkillContainer}:hover & {
-    transform: scale(1.2);
   }
 
   @media (max-width: 768px) {
@@ -149,16 +135,7 @@ const LearningImgs = styled(SkillImage)`
 
 export default function Skills() {
   return (
-    <SkillsContent>
-      <VisuallyHidden>
-        <p>
-          Primary Skills: ReactJS, Javascript, Typescript, NextJs, NodeJs,
-          styled components, sass, handcrafted css, HTML, Git, Github, AWS
-          discovery day
-        </p>
-        <p>Learning the basics: Testing with Jest, Python</p>
-        <p>Next step: SQL, database and networking fundamentals </p>
-      </VisuallyHidden>
+    <SkillsContent variants={fadeIn("left", "tween", .3, .8)}>
       <h4>Skillset</h4>
 
       <section>
