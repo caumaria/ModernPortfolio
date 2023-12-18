@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { projects } from "../../data/data";
 import { fadeIn, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
+import React from "react";
 
 const PortfolioContainer = styled(motion.div)`
   color: var(--pink);
