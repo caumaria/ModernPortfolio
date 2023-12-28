@@ -2,23 +2,24 @@
  * @jest-environment jsdom
  */
 import "@testing-library/jest-dom";
-import { render } from "@testing-library/react";
+import { render, screen } from "@testing-library/react";
 import Work from "./Work";
 import React from "react";
 import "intersection-observer";
+import renderer from 'react-test-renderer';
 
-describe("work", () => {
-  it("heading render correctly", () => {
+
+describe("should render work component correctly", () => {
+
+  it('performs snapshot testing', () => {
     expect.hasAssertions();
-    const { getByText } = render(<Work />);
-
-    expect(getByText(/Cau’s Portfolio/i)).toBeInTheDocument();
-    expect(getByText(/My latest Work/i)).toBeInTheDocument();
+    const tree = renderer.create(<Work />).toJSON();
+    expect(tree).toMatchSnapshot();
   });
 
   it("renders project names correctly", () => {
     expect.hasAssertions();
-    const { getByText } = render(<Work />);
+    render(<Work />);
     const projects = [
       "Starbucks",
       "Crypto Kingdom",
@@ -28,7 +29,8 @@ describe("work", () => {
     ];
 
     projects.forEach((name) => {
-      expect(getByText(name)).toBeInTheDocument();
+      expect(screen.getByText(name)).toBeInTheDocument();
     });
   });
+
 });

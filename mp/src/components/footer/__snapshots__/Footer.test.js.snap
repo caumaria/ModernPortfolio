@@ -1,0 +1,110 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render work component correctly performs snapshot testing 1`] = `
+<div
+  className="sc-eCstZk dcgvxZ"
+  id="contact"
+>
+  <h5>
+    What’s next?
+  </h5>
+  <section>
+    <div
+      className="sc-hKgKIp PnJdO"
+    >
+      <section>
+        <div
+          className="sc-dlfmHC dKMaks"
+        >
+          <h6>
+            Start by saying 
+            <span>
+              hi
+            </span>
+            !
+          </h6>
+          <div>
+            <p>
+              I love to talk about games and new technologies, feel free to contact me anytime.
+            </p>
+            <p>
+              Feedbacks are appreciated ♥
+            </p>
+            <h4>
+              Get in
+              <a
+                data-content="touch"
+                href="mailto: cau.ugolini@gmail.com"
+              >
+                touch
+              </a>
+              .
+            </h4>
+          </div>
+        </div>
+        <div
+          className="sc-bdfCDU jMdLsz"
+        >
+          <div>
+            <a
+              href="https://github.com/caumaria"
+              target="blank"
+            >
+              <img
+                alt="Github de Cau"
+                src=""
+              />
+              <p>
+                Github
+              </p>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/cau-ugolini-923a4a185/"
+              target="blank"
+            >
+              <img
+                alt="Linked In de Cau"
+                src=""
+              />
+              <p>
+                Linked In
+              </p>
+            </a>
+          </div>
+          <a
+            className="sc-gsTDqH RCTip"
+            href="https://www.buymeacoffee.com/cau_"
+            target="blank"
+          >
+            <div>
+              <img
+                alt="coffee cup"
+                src="/coffee.jpg"
+              />
+            </div>
+          </a>
+          <h6>
+            01 coffee a day keeps the bugs away...
+          </h6>
+        </div>
+      </section>
+    </div>
+  </section>
+  <div
+    className="sc-jSguLX kTsCsb"
+  >
+    <a
+      onClick={[Function]}
+      style={{}}
+    >
+      <img
+        alt="arrow scroll to top"
+        src=""
+      />
+    </a>
+  </div>
+  <pre>
+    © Cau Ugolini 2023, Dezembro
+  </pre>
+</div>
+`;

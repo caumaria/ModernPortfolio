@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
-import Github from "../../assets/github.svg";
-import Linkedin from "../../assets/linkedin.svg";
-import FollowMe from "../../assets/followme.svg";
+import Github from "/github.svg";
+import Linkedin from "/linkedin.svg";
+import FollowMe from "/followme.svg";
 
 const rotateAndMove = keyframes`
   to {

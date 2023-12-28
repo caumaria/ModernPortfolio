@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import FooterLinks from "./FooterLinks";
 import FooterAbout from "./FooterAbout";
+import React from "react";
 
 const FooterSectionContainer = styled.div`
   font-size: large;

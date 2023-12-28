@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from "react";
 
 const FooterAboutContainer = styled.div`
   max-width: 400px;
