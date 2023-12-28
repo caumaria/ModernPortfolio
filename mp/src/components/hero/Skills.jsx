@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Learning, skillset } from "../../data/data";
 import { fadeIn } from "../../utils/motion";
 import { motion } from "framer-motion";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const SkillsContent = styled(motion.div)`
   max-width: 360px;

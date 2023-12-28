@@ -4,7 +4,7 @@
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import Work from "./Work";
-import React from "react";
+import React from 'react'; // eslint-disable-line no-unused-vars
 import "intersection-observer";
 import renderer from 'react-test-renderer';
 

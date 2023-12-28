@@ -2,6 +2,7 @@ import styled, { keyframes } from "styled-components";
 import Github from "/github.svg";
 import Linkedin from "/linkedin.svg";
 import FollowMe from "/followme.svg";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const rotateAndMove = keyframes`
   to {

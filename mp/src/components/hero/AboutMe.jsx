@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn } from "../../utils/motion";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const AboutMeContent = styled(motion.div)`
   position: relative;

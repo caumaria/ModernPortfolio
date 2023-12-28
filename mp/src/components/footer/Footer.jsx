@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 import styled from "styled-components";
 import FooterSection from "./FooterSection";
 import ArrowUp from '/arrowUp.svg';
-import React from "react";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const FooterContainer = styled.div`
   background-color: var(--dark-green);

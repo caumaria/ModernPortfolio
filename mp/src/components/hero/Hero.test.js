@@ -1,13 +1,12 @@
 import "@testing-library/jest-dom";
 import renderer from 'react-test-renderer';
-import Footer from "./Footer";
+import Hero from "./Hero";
 import React from 'react'; // eslint-disable-line no-unused-vars
 
-describe("should render work component correctly", () => {
+describe("should render hero component correctly", () => {
     it('performs snapshot testing', () => {
       expect.hasAssertions();
-      const tree = renderer.create(<Footer />).toJSON();
+      const tree = renderer.create(<Hero />).toJSON();
       expect(tree).toMatchSnapshot();
     });
 });
-  

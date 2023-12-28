@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Linkedin from "/linkedin.svg";
 import Github from "/github.svg";
-import React from "react";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const FooterLinksContainer = styled.div`
   max-width: 400px;

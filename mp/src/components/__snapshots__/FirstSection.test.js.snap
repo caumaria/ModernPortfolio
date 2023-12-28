@@ -1,0 +1,268 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render hero component correctly performs snapshot testing 1`] = `
+<div
+  className="sc-hHftZz gCRUBB"
+  id="home"
+>
+  <div
+    className="sc-dmlpXa jhMwDg"
+  >
+    <div
+      className="sc-dlfmHC"
+      style={{}}
+    >
+      <div
+        className="sc-hKgKIp"
+        style={
+          {
+            "opacity": 0,
+            "transform": "translateX(-100px) translateY(0px) translateZ(0)",
+          }
+        }
+      >
+        <div
+          className="sc-eCstZk bLthyG"
+        >
+          <div
+            className="sc-jSguLX isflGR"
+          >
+            <div />
+          </div>
+          <div
+            className="sc-bdfCDU hnyfnA"
+          >
+            <div
+              className="sc-gsTDqH cFswNq"
+            >
+              <li
+                data-content="Home"
+                onClick={[Function]}
+              >
+                Home
+              </li>
+              <a
+                onClick={[Function]}
+                style={{}}
+              >
+                <li
+                  data-content="About Me"
+                >
+                  About Me
+                </li>
+              </a>
+              <a
+                onClick={[Function]}
+                style={{}}
+              >
+                <li
+                  data-content="Work"
+                >
+                  Work
+                </li>
+              </a>
+              <a
+                onClick={[Function]}
+                style={{}}
+              >
+                <li
+                  data-content="Contact"
+                >
+                  Contact
+                </li>
+              </a>
+            </div>
+          </div>
+          <div
+            className="sc-gKsecS eAcDxx"
+          >
+            <div />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-kfzCjt dCgysv"
+    >
+      <div
+        className="sc-jrAGKZ cPBvYX"
+        style={{}}
+      >
+        <div
+          className="sc-kEjbdu kJYzal"
+          style={
+            {
+              "opacity": 0,
+              "transform": "translateX(0px) translateY(-100px) translateZ(0)",
+            }
+          }
+        >
+          <img
+            alt="Photo of Cau."
+            src=""
+          />
+          <div
+            className="sc-iBPTVF hOBOTs"
+          >
+            <p>
+              Cau\`s Portfolio, software engineer. A driven and dynamic individual with a goal to create exceptional web & apps experiences. Let\`s work together to make a lasting impact. Tech Tags: React, JavaScript, Typescript, NextJS.
+            </p>
+          </div>
+        </div>
+        <div
+          className="sc-iqHXzD gjGkyk"
+          style={
+            {
+              "opacity": 0,
+              "transform": "translateX(0px) translateY(-100px) translateZ(0)",
+            }
+          }
+        >
+          <img
+            alt="Photo of Cau."
+            src=""
+          />
+          <section>
+            <p>
+              React
+            </p>
+            <p>
+              Javascript
+            </p>
+            <p>
+              Typescript
+            </p>
+            <p>
+              CSS
+            </p>
+            <p>
+              NextJS
+            </p>
+            <p>
+              NodeJs
+            </p>
+          </section>
+          <p>
+            A driven and dynamic individual with a goal to create exceptional web & apps experiences. Let\`s work together to make a lasting impact.
+          </p>
+        </div>
+        <div
+          className="sc-fubDmA fdfYXG"
+          style={
+            {
+              "opacity": 0,
+              "transform": "translateX(0px) translateY(100px) translateZ(0)",
+            }
+          }
+        >
+          <div>
+            <a
+              onClick={[Function]}
+              style={{}}
+            >
+              <button>
+                Let 
+                <span>
+                  ’
+                </span>
+                 s get in touch
+                <span>
+                  !
+                </span>
+                <img
+                  alt="Arrow pointing to ways of contact"
+                  src=""
+                />
+              </button>
+            </a>
+            <div
+              className="sc-pGaPU kqdzQK"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-hBEZvw dGlwES"
+      style={{}}
+    >
+      <div
+        className="sc-fodVRF"
+        style={
+          {
+            "opacity": 0,
+            "transform": "translateX(100px) translateY(0px) translateZ(0)",
+          }
+        }
+      >
+        <div
+          className="sc-eCstZk bLthyG"
+        >
+          <div
+            className="sc-fFubCH gUhBXD"
+          >
+            <div
+              className="sc-bkzXAi bCeSCc"
+            >
+              <div />
+            </div>
+          </div>
+          <div
+            className="sc-crrtmM hYNtpV"
+          >
+            <div
+              className="sc-dQpIV hXcavR"
+            >
+              <a
+                className="sc-bqyKbq llzPEO"
+                href="https://github.com/caumaria"
+                target="blank"
+              >
+                <img
+                  alt="Github de Cau"
+                  src=""
+                />
+              </a>
+              <div
+                className="sc-kstpWv bMeGUc"
+              >
+                <img
+                  alt="Me siga nas redes sociais:"
+                  src=""
+                />
+              </div>
+              <a
+                className="sc-bqyKbq llzPEO"
+                href="https://www.linkedin.com/in/cau-ugolini-923a4a185/"
+                target="blank"
+              >
+                <img
+                  alt="Linked In de Cau"
+                  src=""
+                />
+              </a>
+              <div
+                className="sc-kstpWv bMeGUc"
+              >
+                <img
+                  alt="Me siga nas redes sociais:"
+                  src=""
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            className="sc-idOjMB bIUszM"
+          >
+            <div
+              className="sc-dIUfKc dexbKx"
+            >
+              <div />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

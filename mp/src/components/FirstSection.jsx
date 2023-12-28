@@ -2,6 +2,7 @@ import Header from "./Header";
 import styled from "styled-components";
 import MainSection from "./MainSection";
 import SocialBar from "./SocialBar";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const PaddingContainer = styled.div`
   padding: 0 4rem;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const FooterAboutContainer = styled.div`
   max-width: 400px;
