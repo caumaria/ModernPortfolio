@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe";
 import Skills from "./Skills";
 import { motion } from "framer-motion";
 import { staggerContainer } from "../../utils/motion";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const HeroContainer = styled.div`
   background-color: var(--dark-green);

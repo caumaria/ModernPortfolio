@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render work component correctly performs snapshot testing 1`] = `
+<div
+  className="sc-bdfCDU kLRHhO"
+  id="work"
+  style={{}}
+>
+  <div>
+    <h1>
+      Cau’s Portfolio
+    </h1>
+    <p>
+      My latest Work
+    </p>
+  </div>
+  <section
+    className="sc-gsTDqH boHZyS"
+  >
+    <div
+      className="sc-hKgKIp byorcx"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(0px) translateY(100px) translateZ(0)",
+        }
+      }
+    >
+      <section
+        className="sc-dlfmHC"
+      >
+        <div
+          className="sc-jSguLX burynh"
+        />
+        <div
+          className="sc-gKsecS gVxlhp"
+        />
+        <div
+          className="sc-eCstZk VUTaJ"
+        >
+          <a
+            href="https://starbucks-cau.vercel.app/"
+            target="blank"
+          >
+            <img
+              alt="Image and Link to cau’s project"
+              src="starbucks.png"
+            />
+          </a>
+        </div>
+      </section>
+      <h2>
+        Starbucks
+      </h2>
+      <p>
+        Ecommerce shop with front-end mechanics as Cart Context & Provider
+        , 
+        2023
+      </p>
+    </div>
+    <div
+      className="sc-hKgKIp byorcx"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(0px) translateY(100px) translateZ(0)",
+        }
+      }
+    >
+      <section
+        className="sc-dlfmHC"
+      >
+        <div
+          className="sc-jSguLX burynh"
+        />
+        <div
+          className="sc-gKsecS gVxlhp"
+        />
+        <div
+          className="sc-eCstZk VUTaJ"
+        >
+          <a
+            href="https://crypto-kingdom.vercel.app"
+            target="blank"
+          >
+            <img
+              alt="Image and Link to cau’s project"
+              src="cryptokingdom.png"
+            />
+          </a>
+        </div>
+      </section>
+      <h2>
+        Crypto Kingdom
+      </h2>
+      <p>
+        Crypto Tracker App with the Coingecko API, search for real-time info on cryptocurrencies
+        , 
+        2023
+      </p>
+    </div>
+    <div
+      className="sc-hKgKIp byorcx"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(0px) translateY(100px) translateZ(0)",
+        }
+      }
+    >
+      <section
+        className="sc-dlfmHC"
+      >
+        <div
+          className="sc-jSguLX burynh"
+        />
+        <div
+          className="sc-gKsecS gVxlhp"
+        />
+        <div
+          className="sc-eCstZk VUTaJ"
+        >
+          <a
+            href="https://productlandingpage-cau.vercel.app"
+            target="blank"
+          >
+            <img
+              alt="Image and Link to cau’s project"
+              src="sneakers.png"
+            />
+          </a>
+        </div>
+      </section>
+      <h2>
+        sneakers
+      </h2>
+      <p>
+        Landing page for products, from FrontendMentor challenge(intermediate)
+        , 
+        2022
+      </p>
+    </div>
+    <div
+      className="sc-hKgKIp byorcx"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(0px) translateY(100px) translateZ(0)",
+        }
+      }
+    >
+      <section
+        className="sc-dlfmHC"
+      >
+        <div
+          className="sc-jSguLX burynh"
+        />
+        <div
+          className="sc-gKsecS gVxlhp"
+        />
+        <div
+          className="sc-eCstZk VUTaJ"
+        >
+          <a
+            href="https://diary-cau.vercel.app"
+            target="blank"
+          >
+            <img
+              alt="Image and Link to cau’s project"
+              src="diary.png"
+            />
+          </a>
+        </div>
+      </section>
+      <h2>
+        Diary App
+      </h2>
+      <p>
+        CRUD app • TodoList & Pomodoro Timer, enhance productivity and streamline tasks. 
+        , 
+        2023
+      </p>
+    </div>
+    <div
+      className="sc-hKgKIp byorcx"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(0px) translateY(100px) translateZ(0)",
+        }
+      }
+    >
+      <section
+        className="sc-dlfmHC"
+      >
+        <div
+          className="sc-jSguLX burynh"
+        />
+        <div
+          className="sc-gKsecS gVxlhp"
+        />
+        <div
+          className="sc-eCstZk VUTaJ"
+        >
+          <a
+            href="https://cau-portfoliocard.vercel.app/"
+            target="blank"
+          >
+            <img
+              alt="Image and Link to cau’s project"
+              src="portfoliocard.png"
+            />
+          </a>
+        </div>
+      </section>
+      <h2>
+        Portfolio Card Style
+      </h2>
+      <p>
+        Portfolio Card in dark mode, the style designed by the developer Keita Yamada. 
+        , 
+        2022
+      </p>
+    </div>
+  </section>
+</div>
+`;

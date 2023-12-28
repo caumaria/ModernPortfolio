@@ -1,0 +1,284 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render hero component correctly performs snapshot testing 1`] = `
+<div
+  className="sc-fubDmA ehuqDd"
+  id="hero"
+>
+  <h2>
+    About Me
+  </h2>
+  <div
+    className="sc-pGaPU dxOfem"
+    style={{}}
+  >
+    <div
+      className="sc-bdfCDU ebdCGA"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(-100px) translateY(0px) translateZ(0)",
+        }
+      }
+    >
+      <div
+        className="sc-gsTDqH cmqlGa"
+      />
+      <div
+        className="sc-dlfmHC gLvNLr"
+      />
+      <h4>
+        Who am I
+      </h4>
+      <p>
+        Brazilian Self-taught Front-end Developer.
+        <br />
+        <br />
+        Fueled by curiosity, delight, and a strong aspiration to achieve excellence, I’ve initiated my academic pursuit as a Software Engineer with the intent to broaden my knowledge and delve deeper into my passions.
+        <br />
+        <br />
+        I’m searching for a junior level position as a developer, where I can utilize my enthusiasm and skills to create outstanding digital experiences.
+        <br />
+        <br />
+        I find joy in playing games ♥
+      </p>
+    </div>
+    <div
+      className="sc-hKgKIp gmbLyV"
+      style={
+        {
+          "opacity": 0,
+          "transform": "translateX(100px) translateY(0px) translateZ(0)",
+        }
+      }
+    >
+      <h4>
+        Skillset
+      </h4>
+      <section>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="React"
+              src="react.png"
+            />
+          </div>
+          <p>
+            React
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="JS"
+              src="js.png"
+            />
+          </div>
+          <p>
+            JS
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="TS"
+              src="ts.png"
+            />
+          </div>
+          <p>
+            TS
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="Next"
+              src="next.webp"
+            />
+          </div>
+          <p>
+            Next
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="Node"
+              src="node.png"
+            />
+          </div>
+          <p>
+            Node
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="CSS"
+              src="css.png"
+            />
+          </div>
+          <p>
+            CSS
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="HTML"
+              src="html.png"
+            />
+          </div>
+          <p>
+            HTML
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="Git"
+              src="git.png"
+            />
+          </div>
+          <p>
+            Git
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="Github"
+              src="github.png"
+            />
+          </div>
+          <p>
+            Github
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS fLhVCx"
+          >
+            <img
+              alt="AWS"
+              src="aws.png"
+            />
+          </div>
+          <p>
+            AWS
+          </p>
+        </div>
+      </section>
+      <h5>
+        currently learning...
+      </h5>
+      <section>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS sc-iBPTVF fLhVCx cMrvLe"
+          >
+            <img
+              alt="Python"
+              src="python.png"
+            />
+          </div>
+          <p>
+            Python
+          </p>
+        </div>
+        <div
+          className="sc-eCstZk ghRhgA"
+        >
+          <div
+            className="sc-jSguLX cLpFDA"
+          />
+          <div
+            className="sc-gKsecS sc-iBPTVF fLhVCx cMrvLe"
+          >
+            <img
+              alt="SQL"
+              src="sql.jpg"
+            />
+          </div>
+          <p>
+            SQL
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;
