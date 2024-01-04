@@ -3,6 +3,7 @@ import { fadeIn } from "../../utils/motion";
 import styled from 'styled-components'
 import { Link } from "react-scroll";
 import Arrow from "../../assets/arrow.svg";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 
 const SlideUp = styled(motion.div)`

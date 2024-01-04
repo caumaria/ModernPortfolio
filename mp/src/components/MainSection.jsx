@@ -5,6 +5,7 @@ import DesktopProfilePic from "../assets/me.png";
 import MobileProfilePic from "../assets/mobilepic.png";
 import VisuallyHidden from "./VisuallyHidden";
 import MainSecButton from "./main section/MainSecButton";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const MainConteiner = styled(motion.div)`
   display: flex;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const AboutMeContent = styled.div`
   position: relative;

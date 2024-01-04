@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Icon from "./main section/Icons";
 import { HeaderContainer } from "./Header";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const MotionSocial = styled(motion.div)`
   @media (max-width: 1000px) {

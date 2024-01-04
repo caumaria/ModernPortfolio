@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const VisuallyHiddenContainer = styled.div`
   position: absolute;

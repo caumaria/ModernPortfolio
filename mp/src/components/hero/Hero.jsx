@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const HeroContainer = styled.div`
   background-color: var(--dark-green);

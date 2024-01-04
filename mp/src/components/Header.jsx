@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import Navbar from "./Navbar";
+import React from 'react'; // eslint-disable-line no-unused-vars
 
 const MotionConteiner = styled(motion.div)``;
 const SlideInLeft = styled(motion.div)``;
