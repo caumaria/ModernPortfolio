@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import AboutMe from "./AboutMe";
 import Skills from "./Skills";
-import { motion } from "framer-motion";
-import { staggerContainer } from "../../utils/motion";
 
 const HeroContainer = styled.div`
   background-color: var(--dark-green);
@@ -25,7 +23,7 @@ const HeroContainer = styled.div`
   }
 `;
 
-const AboutMeContainer = styled(motion.div)`
+const AboutMeContainer = styled.div`
   max-width: 1400px;
   width: 100%;
   display: flex;
@@ -45,11 +43,7 @@ export default function Hero() {
   return (
     <HeroContainer id="hero">
       <h2>About Me</h2>
-      <AboutMeContainer 
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 1 }}>
+      <AboutMeContainer>
         <AboutMe/>
         <Skills/>
       </AboutMeContainer>

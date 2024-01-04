@@ -1,8 +1,6 @@
 import styled from "styled-components";
-import { motion } from "framer-motion";
-import { fadeIn } from "../../utils/motion";
 
-const AboutMeContent = styled(motion.div)`
+const AboutMeContent = styled.div`
   position: relative;
   max-width: 360px;
   width: 100%;
@@ -63,10 +61,9 @@ const TinySquareBottom = styled.div`
 
 export default function AboutMe() {
   return (
-    <AboutMeContent variants={fadeIn("right", "tween", .3, .8)}>
+    <AboutMeContent>
       <TinySquareTop />
       <TinySquareBottom />
-
       <h4>Who am I</h4>
       <p>
         Brazilian Self-taught Front-end Developer.

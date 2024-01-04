@@ -1,9 +1,7 @@
 import styled from "styled-components";
 import { Learning, skillset } from "../../data/data";
-import { fadeIn } from "../../utils/motion";
-import { motion } from "framer-motion";
 
-const SkillsContent = styled(motion.div)`
+const SkillsContent = styled.div`
   max-width: 360px;
   width: 100%;
   height: 360px;
@@ -123,21 +121,20 @@ const SkillImage = styled.div`
 
   @media (max-width: 768px) {
     top: -4%;
-    left: -2%;
+    left: -3%;
   }
 `;
 
 const LearningImgs = styled(SkillImage)`
   @media (max-width: 768px) {
-    left: 10%;
+    left: 8%;
   }
 `;
 
 export default function Skills() {
   return (
-    <SkillsContent variants={fadeIn("left", "tween", .3, .8)}>
+    <SkillsContent>
       <h4>Skillset</h4>
-
       <section>
         {skillset.map((skill, i) => (
           <SkillContainer key={i}>
