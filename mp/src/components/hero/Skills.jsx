@@ -102,8 +102,8 @@ const Skill = styled.div`
 
 const SkillImage = styled.div`
   position: absolute;
-  top: -3%;
-  right: 6%;
+  top: -4%;
+  right: 7%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,6 +126,7 @@ const SkillImage = styled.div`
 `;
 
 const LearningImgs = styled(SkillImage)`
+  left: 9%;
   @media (max-width: 768px) {
     left: 8%;
   }
