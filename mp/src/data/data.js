@@ -1,7 +1,15 @@
 export const projects = [
   {
+    name: "Blog",
+    about: "Food & Health Blog with MySQL and Express.js to fetch and display posts",
+    year: "2024",
+    url: "https://github.com/caumaria/myblog",
+    web: "https://github.com/caumaria/myblog",
+    img: "blog.jpg",
+  },
+  {
     name: "Starbucks",
-    about: "Ecommerce shop with front-end mechanics as Cart Context & Provider",
+    about: "Ecommerce shop with front-end mechanics as well as Context & Provider",
     year: "2023",
     url: "https://github.com/caumaria/Starbucks",
     web: "https://starbucks-cau.vercel.app/",
